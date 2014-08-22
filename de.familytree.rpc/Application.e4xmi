@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="ASCII"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_ZMiHMCnPEeSBD8F_g1jsPA" elementId="de.familytree.rpc.application">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_acfTMCnPEeSBD8F_g1jsPA" elementId="de.familytree.rpc.trimmedwindow.familyTree" label="Family Tree" x="100" y="100" width="600" height="400"/>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_ZMiHMCnPEeSBD8F_g1jsPA" elementId="de.familytree.rpc.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_acfTMCnPEeSBD8F_g1jsPA" elementId="de.familytree.rpc.trimmedwindow.familyTree" selectedElement="_0U1X8CnUEeSBD8F_g1jsPA" label="Family Tree" x="100" y="100" width="800" height="600">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_0U1X8CnUEeSBD8F_g1jsPA" elementId="de.familytree.rpc.perspectivestack.0" selectedElement="_9qCMwCnUEeSBD8F_g1jsPA">
+      <children xsi:type="advanced:Perspective" xmi:id="_9qCMwCnUEeSBD8F_g1jsPA" elementId="de.familytree.rpc.perspective.familyTree" selectedElement="_I4mW8CnVEeSBD8F_g1jsPA" label="Family Tree">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_I4mW8CnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.overview" selectedElement="_RcPL8CnVEeSBD8F_g1jsPA" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_RcPL8CnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.overview" selectedElement="_3SGk4CnVEeSBD8F_g1jsPA">
+            <children xsi:type="basic:Part" xmi:id="_3SGk4CnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.part.overview" contributionURI="bundleclass://de.familytree.wizards/de.familytree.wizards.OverviewWizard" label="Overview"/>
+          </children>
+        </children>
+        <children xsi:type="basic:PartSashContainer" xmi:id="_aVdPYCnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.content">
+          <children xsi:type="basic:PartStack" xmi:id="_gJPy8CnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.content.view">
+            <children xsi:type="basic:Part" xmi:id="_7vpHMCnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.part.content.view" contributionURI="bundleclass://de.familytree.wizards/de.familytree.wizards.ViewWizard" label="View"/>
+          </children>
+          <children xsi:type="basic:Part" xmi:id="_7WK3QCnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.part.content.details" contributionURI="bundleclass://de.familytree.wizards/de.familytree.wizards.DetailsWizard" label="Details"/>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_18NSgCnhEeSBD8F_g1jsPA" elementId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_78_wQCnhEeSBD8F_g1jsPA" elementId="org.eclipse.ui.file.menu" label="File">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_5vX6wCnkEeSBD8F_g1jsPA" elementId="de.familytree.rcp.menuseparator.0"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Og-BwCniEeSBD8F_g1jsPA" elementId="de.familytree.rcp.handledmenuitem.file.exit" label="Exit" command="_XbHSQCniEeSBD8F_g1jsPA"/>
+      </children>
+    </mainMenu>
+  </children>
+  <handlers xmi:id="_l-pFwCnlEeSBD8F_g1jsPA" elementId="de.familytree.rcp.handlers.file.exit" contributionURI="bundleclass://de.familytree.handlers/de.familytree.handlers.ExitHandler" command="_XbHSQCniEeSBD8F_g1jsPA"/>
+  <commands xmi:id="_XbHSQCniEeSBD8F_g1jsPA" elementId="org.eclipse.ui.file.exit" commandName="Exit"/>
   <addons xmi:id="_ZMiHMSnPEeSBD8F_g1jsPA" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_ZMiHMinPEeSBD8F_g1jsPA" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_ZMiHMynPEeSBD8F_g1jsPA" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Family Tree" uid="de.familytree.rpc.product" id="de.familytree.rpc.de_familytree_rpc" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="0.0.1" useFeatures="true" includeLaunchers="true">
+<product name="Family Tree" uid="familytree_product" id="de.familytree.rcp.familytree_product" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="0.0.1" useFeatures="true" includeLaunchers="true">
 
    <configIni use="default">
    </configIni>
 
    <launcherArgs>
-      <programArgs>-console -clearPersistedState
+      <programArgs>-console -clearPersistedState -profile=familytree
       </programArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>
@@ -21,7 +21,6 @@
    </launcher>
 
    <vm>
-      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7</windows>
    </vm>
 
    <plugins>
@@ -62,6 +61,24 @@
       <feature id="org.eclipse.emf.databinding.edit"/>
       <feature id="org.eclipse.rcp"/>
       <feature id="org.eclipse.platform"/>
+      <feature id="org.eclipse.emf.ecp.demo.e3.feature" version="1.3.0.20140610-1606"/>
+      <feature id="org.eclipse.emf.ecp.view.validation.feature" version="1.3.0.20140610-1606"/>
+      <feature id="org.eclipse.emf.ecp.emfforms.idetooling.feature" version="1.3.0.20140610-1606"/>
+      <feature id="org.eclipse.emf.ecp.view.vertical.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.table.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.model.editor.feature"/>
+      <feature id="org.eclipse.emf.ecp.emfforms.runtime.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.horizontal.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.unset.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.model.controls.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.group.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.rule.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.custom.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.label.feature"/>
+      <feature id="org.eclipse.emf.ecp.workspace.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.template.helper.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.categorization.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.treemasterdetail.feature"/>
    </features>
 
 

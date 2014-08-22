@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: de.familytree.handlers
+Bundle-SymbolicName: de.familytree.handlers
+Bundle-Version: 0.0.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.eclipse.e4.core.di,
+ org.eclipse.e4.ui.workbench

@@ -74,9 +74,23 @@
          unpack="false"/>
 
    <plugin
-         id="de.familytree.rpc"
+         id="de.familytree.wizards"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="de.familytree.rcp"
          download-size="0"
          install-size="0"
          version="0.0.0"/>
+
+   <plugin
+         id="de.familytree.handlers"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
 
 </feature>
