@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Family Tree" uid="de.familytree.rpc.product" id="de.familytree.rpc.de_familytree_rpc" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="0.0.1" useFeatures="true" includeLaunchers="true">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-console -clearPersistedState
+      </programArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <launcher>
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7</windows>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="de.familytree.feature"/>
+      <feature id="org.eclipse.e4.rcp"/>
+      <feature id="org.eclipse.emf.ecore"/>
+      <feature id="org.eclipse.emf.common"/>
+      <feature id="org.eclipse.emf.edit"/>
+      <feature id="org.eclipse.emf.ecp.feature"/>
+      <feature id="org.eclipse.emf.ecp.emfstore.feature"/>
+      <feature id="org.eclipse.emf.ecp.e3.feature"/>
+      <feature id="org.eclipse.emf.emfstore.client.ui.feature"/>
+      <feature id="org.eclipse.emf.emfstore.client.feature"/>
+      <feature id="org.eclipse.emf.emfstore.license.feature"/>
+      <feature id="org.eclipse.emf.emfstore.server.feature"/>
+      <feature id="org.eclipse.emf.emfstore.common.feature"/>
+      <feature id="org.eclipse.net4j.util"/>
+      <feature id="org.eclipse.emf.edit.ui"/>
+      <feature id="org.eclipse.ecf.filetransfer.httpclient4.feature"/>
+      <feature id="org.eclipse.equinox.p2.core.feature"/>
+      <feature id="org.eclipse.ecf.core.ssl.feature"/>
+      <feature id="org.eclipse.help"/>
+      <feature id="org.eclipse.equinox.p2.rcp.feature"/>
+      <feature id="org.eclipse.equinox.p2.user.ui"/>
+      <feature id="org.eclipse.ecf.filetransfer.ssl.feature"/>
+      <feature id="org.eclipse.ecf.filetransfer.feature"/>
+      <feature id="org.eclipse.ecf.core.feature"/>
+      <feature id="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature"/>
+      <feature id="org.eclipse.equinox.p2.extras.feature"/>
+      <feature id="org.eclipse.emf.common.ui"/>
+      <feature id="org.eclipse.emf.ecore.edit"/>
+      <feature id="org.eclipse.emf.databinding"/>
+      <feature id="org.eclipse.emf.ecp.viewmodel.feature"/>
+      <feature id="org.eclipse.emf.ecp.view.template.feature"/>
+      <feature id="org.eclipse.emf.databinding.edit"/>
+      <feature id="org.eclipse.rcp"/>
+      <feature id="org.eclipse.platform"/>
+   </features>
+
+
+</product>
