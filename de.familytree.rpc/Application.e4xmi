@@ -12,7 +12,9 @@
           <children xsi:type="basic:PartStack" xmi:id="_gJPy8CnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.content.view">
             <children xsi:type="basic:Part" xmi:id="_7vpHMCnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.part.content.view" contributionURI="bundleclass://de.familytree.wizards/de.familytree.wizards.ViewWizard" label="View"/>
           </children>
-          <children xsi:type="basic:Part" xmi:id="_7WK3QCnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.part.content.details" contributionURI="bundleclass://de.familytree.wizards/de.familytree.wizards.DetailsWizard" label="Details"/>
+          <children xsi:type="basic:PartStack" xmi:id="_V32mQC30EeSbXaBE1ie_FA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.content.details">
+            <children xsi:type="basic:Part" xmi:id="_7WK3QCnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.part.content.details" contributionURI="bundleclass://de.familytree.wizards/de.familytree.wizards.DetailsWizard" label="Details"/>
+          </children>
         </children>
       </children>
     </children>
