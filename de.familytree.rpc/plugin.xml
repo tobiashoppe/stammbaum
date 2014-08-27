@@ -21,7 +21,7 @@
          id="familytree_ecp_product"
          point="org.eclipse.core.runtime.products">
       <product
-            application="org.eclipse.emf.ecp.application.e3.application"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application"
             name="Family Tree">
          <property
                name="appName"

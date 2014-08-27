@@ -5,7 +5,7 @@
       <children xsi:type="advanced:Perspective" xmi:id="_9qCMwCnUEeSBD8F_g1jsPA" elementId="de.familytree.rpc.perspective.familyTree" selectedElement="_I4mW8CnVEeSBD8F_g1jsPA" label="Family Tree">
         <children xsi:type="basic:PartSashContainer" xmi:id="_I4mW8CnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.overview" selectedElement="_RcPL8CnVEeSBD8F_g1jsPA" horizontal="true">
           <children xsi:type="basic:PartStack" xmi:id="_RcPL8CnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.overview" selectedElement="_3SGk4CnVEeSBD8F_g1jsPA">
-            <children xsi:type="basic:Part" xmi:id="_3SGk4CnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.part.overview" contributionURI="bundleclass://de.familytree.wizards/de.familytree.wizards.OverviewWizard" label="Overview"/>
+            <children xsi:type="basic:Part" xmi:id="_3SGk4CnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.part.overview" contributionURI="bundleclass://org.eclipse.emf.ecp.ui.e4/org.eclipse.emf.ecp.ui.e4.view.ECPModelView" label="Overview" iconURI="platform:/plugin/org.eclipse.emf.ecp.application.e4/icons/folder_brick.png"/>
           </children>
         </children>
         <children xsi:type="basic:PartSashContainer" xmi:id="_aVdPYCnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.content">
@@ -13,7 +13,7 @@
             <children xsi:type="basic:Part" xmi:id="_7vpHMCnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.part.content.view" contributionURI="bundleclass://de.familytree.wizards/de.familytree.wizards.ViewWizard" label="View"/>
           </children>
           <children xsi:type="basic:PartStack" xmi:id="_V32mQC30EeSbXaBE1ie_FA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.content.details">
-            <children xsi:type="basic:Part" xmi:id="_7WK3QCnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.part.content.details" contributionURI="bundleclass://de.familytree.wizards/de.familytree.wizards.DetailsWizard" label="Details"/>
+            <children xsi:type="basic:Part" xmi:id="_7WK3QCnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.part.content.details" contributionURI="bundleclass://org.eclipse.emf.ecp.ui.e4/org.eclipse.emf.ecp.ui.e4.view.ECPRepositoryView" label="Details" iconURI="platform:/plugin/org.eclipse.emf.ecp.application.e4/icons/repositories.gif"/>
           </children>
         </children>
       </children>
