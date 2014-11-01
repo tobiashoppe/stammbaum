@@ -7,9 +7,15 @@
   <foreignModel>familytree.ecore</foreignModel>
   <genPackages prefix="Familytree" basePackage="de.familytree" disposableProviderFactory="true"
       ecorePackage="familytree.ecore#/">
-    <genClasses ecoreClass="familytree.ecore#//Person"/>
+    <genClasses ecoreClass="familytree.ecore#//Person">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute familytree.ecore#//Person/firstName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute familytree.ecore#//Person/secondName"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference familytree.ecore#//Person/children"/>
+    </genClasses>
     <genClasses ecoreClass="familytree.ecore#//FamilyTree">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference familytree.ecore#//FamilyTree/persons"/>
     </genClasses>
+    <genClasses ecoreClass="familytree.ecore#//Woman"/>
+    <genClasses ecoreClass="familytree.ecore#//Man"/>
   </genPackages>
 </genmodel:GenModel>

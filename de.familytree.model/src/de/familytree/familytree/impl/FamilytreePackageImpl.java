@@ -144,6 +144,15 @@ public class FamilytreePackageImpl extends EPackageImpl implements FamilytreePac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getPerson_Children() {
+		return (EReference)personEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getFamilyTree() {
 		return familyTreeEClass;
 	}
@@ -206,6 +215,7 @@ public class FamilytreePackageImpl extends EPackageImpl implements FamilytreePac
 		personEClass = createEClass(PERSON);
 		createEAttribute(personEClass, PERSON__FIRST_NAME);
 		createEAttribute(personEClass, PERSON__SECOND_NAME);
+		createEReference(personEClass, PERSON__CHILDREN);
 
 		familyTreeEClass = createEClass(FAMILY_TREE);
 		createEReference(familyTreeEClass, FAMILY_TREE__PERSONS);
@@ -250,6 +260,7 @@ public class FamilytreePackageImpl extends EPackageImpl implements FamilytreePac
 		initEClass(personEClass, Person.class, "Person", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPerson_FirstName(), ecorePackage.getEString(), "firstName", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerson_SecondName(), ecorePackage.getEString(), "secondName", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPerson_Children(), this.getPerson(), null, "children", null, 0, -1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(familyTreeEClass, FamilyTree.class, "FamilyTree", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFamilyTree_Persons(), this.getPerson(), null, "persons", null, 0, -1, FamilyTree.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

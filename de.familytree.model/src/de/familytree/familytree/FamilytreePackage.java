@@ -85,13 +85,22 @@ public interface FamilytreePackage extends EPackage {
 	int PERSON__SECOND_NAME = 1;
 
 	/**
+	 * The feature id for the '<em><b>Children</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__CHILDREN = 2;
+
+	/**
 	 * The number of structural features of the '<em>Person</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_FEATURE_COUNT = 2;
+	int PERSON_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Person</em>' class.
@@ -169,6 +178,15 @@ public interface FamilytreePackage extends EPackage {
 	int WOMAN__SECOND_NAME = PERSON__SECOND_NAME;
 
 	/**
+	 * The feature id for the '<em><b>Children</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WOMAN__CHILDREN = PERSON__CHILDREN;
+
+	/**
 	 * The number of structural features of the '<em>Woman</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -213,6 +231,15 @@ public interface FamilytreePackage extends EPackage {
 	 * @ordered
 	 */
 	int MAN__SECOND_NAME = PERSON__SECOND_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Children</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAN__CHILDREN = PERSON__CHILDREN;
 
 	/**
 	 * The number of structural features of the '<em>Man</em>' class.
@@ -264,6 +291,17 @@ public interface FamilytreePackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getPerson_SecondName();
+
+	/**
+	 * Returns the meta object for the reference list '{@link de.familytree.familytree.Person#getChildren <em>Children</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Children</em>'.
+	 * @see de.familytree.familytree.Person#getChildren()
+	 * @see #getPerson()
+	 * @generated
+	 */
+	EReference getPerson_Children();
 
 	/**
 	 * Returns the meta object for class '{@link de.familytree.familytree.FamilyTree <em>Family Tree</em>}'.
@@ -354,6 +392,14 @@ public interface FamilytreePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PERSON__SECOND_NAME = eINSTANCE.getPerson_SecondName();
+
+		/**
+		 * The meta object literal for the '<em><b>Children</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PERSON__CHILDREN = eINSTANCE.getPerson_Children();
 
 		/**
 		 * The meta object literal for the '{@link de.familytree.familytree.impl.FamilyTreeImpl <em>Family Tree</em>}' class.

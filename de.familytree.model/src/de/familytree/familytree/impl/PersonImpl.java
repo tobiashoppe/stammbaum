@@ -5,11 +5,14 @@ package de.familytree.familytree.impl;
 import de.familytree.familytree.FamilytreePackage;
 import de.familytree.familytree.Person;
 
+import java.util.Collection;
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,6 +23,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <ul>
  *   <li>{@link de.familytree.familytree.impl.PersonImpl#getFirstName <em>First Name</em>}</li>
  *   <li>{@link de.familytree.familytree.impl.PersonImpl#getSecondName <em>Second Name</em>}</li>
+ *   <li>{@link de.familytree.familytree.impl.PersonImpl#getChildren <em>Children</em>}</li>
  * </ul>
  * </p>
  *
@@ -62,6 +66,16 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 	 * @ordered
 	 */
 	protected String secondName = SECOND_NAME_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getChildren() <em>Children</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getChildren()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Person> children;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -129,6 +143,18 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<Person> getChildren() {
+		if (children == null) {
+			children = new EObjectResolvingEList<Person>(Person.class, this, FamilytreePackage.PERSON__CHILDREN);
+		}
+		return children;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -136,6 +162,8 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 				return getFirstName();
 			case FamilytreePackage.PERSON__SECOND_NAME:
 				return getSecondName();
+			case FamilytreePackage.PERSON__CHILDREN:
+				return getChildren();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -145,6 +173,7 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -153,6 +182,10 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 				return;
 			case FamilytreePackage.PERSON__SECOND_NAME:
 				setSecondName((String)newValue);
+				return;
+			case FamilytreePackage.PERSON__CHILDREN:
+				getChildren().clear();
+				getChildren().addAll((Collection<? extends Person>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -172,6 +205,9 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 			case FamilytreePackage.PERSON__SECOND_NAME:
 				setSecondName(SECOND_NAME_EDEFAULT);
 				return;
+			case FamilytreePackage.PERSON__CHILDREN:
+				getChildren().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -188,6 +224,8 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 				return FIRST_NAME_EDEFAULT == null ? firstName != null : !FIRST_NAME_EDEFAULT.equals(firstName);
 			case FamilytreePackage.PERSON__SECOND_NAME:
 				return SECOND_NAME_EDEFAULT == null ? secondName != null : !SECOND_NAME_EDEFAULT.equals(secondName);
+			case FamilytreePackage.PERSON__CHILDREN:
+				return children != null && !children.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

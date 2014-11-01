@@ -2,6 +2,7 @@
  */
 package de.familytree.familytree;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -14,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link de.familytree.familytree.Person#getFirstName <em>First Name</em>}</li>
  *   <li>{@link de.familytree.familytree.Person#getSecondName <em>Second Name</em>}</li>
+ *   <li>{@link de.familytree.familytree.Person#getChildren <em>Children</em>}</li>
  * </ul>
  * </p>
  *
@@ -74,4 +76,20 @@ public interface Person extends EObject {
 	 * @generated
 	 */
 	void setSecondName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Children</b></em>' reference list.
+	 * The list contents are of type {@link de.familytree.familytree.Person}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Children</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Children</em>' reference list.
+	 * @see de.familytree.familytree.FamilytreePackage#getPerson_Children()
+	 * @model
+	 * @generated
+	 */
+	EList<Person> getChildren();
 } // Person

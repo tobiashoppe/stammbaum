@@ -61,6 +61,7 @@ public class PersonItemProvider
 
 			addFirstNamePropertyDescriptor(object);
 			addSecondNamePropertyDescriptor(object);
+			addChildrenPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -105,6 +106,28 @@ public class PersonItemProvider
 				 false,
 				 false,
 				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Children feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addChildrenPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Person_children_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Person_children_feature", "_UI_Person_type"),
+				 FamilytreePackage.Literals.PERSON__CHILDREN,
+				 true,
+				 false,
+				 true,
+				 null,
 				 null,
 				 null));
 	}
