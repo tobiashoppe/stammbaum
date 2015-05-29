@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<de.familytree:FamilyTree xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.familytree="http://familytree/0.1">
+  <members xsi:type="de.familytree:Woman" firstName="Marianne" secondName="Schmidt" children="//@members.3" parents="//@members.2 //@members.1" nameOfBirth="" relationshipStatus="Married" inRelationTo="//@members.4"/>
+  <members xsi:type="de.familytree:Man" firstName="mparent" secondName="s" children="//@members.0"/>
+  <members xsi:type="de.familytree:Woman" firstName="wparent" children="//@members.0"/>
+  <members xsi:type="de.familytree:Woman" firstName="Heidi" secondName="Schmidt" parents="//@members.0 //@members.4" died="true"/>
+  <members xsi:type="de.familytree:Man" firstName="Peter" secondName="Schmidt" children="//@members.3" nameOfBirth="Meyer" relationshipStatus="Married" inRelationWith="//@members.0"/>
+</de.familytree:FamilyTree>

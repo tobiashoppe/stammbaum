@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.familytree="http://familytree/0.1" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_vBAYYGGvEeSC7PSpVIpxhg" selectedViews="_GGBUoAYeEeWtUI0Fk-ljRA" version="8.1.1">
+  <models xmi:type="de.familytree:FamilyTree" href="My.familytree#/"/>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_kBgTAGGxEeSSybFj2AOb3Q" initialized="true">
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_0CCXYGGxEeSSybFj2AOb3Q" name="new Familytree">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_0CCXYmGxEeSSybFj2AOb3Q" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_0CCXY2GxEeSSybFj2AOb3Q" type="Sirius" element="_0CCXYGGxEeSSybFj2AOb3Q" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_G9kNQGGyEeSER7JqT575Dg" type="2001" element="_G9eGoGGyEeSER7JqT575Dg">
+            <children xmi:type="notation:Node" xmi:id="_G9kNQ2GyEeSER7JqT575Dg" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_G9kNRGGyEeSER7JqT575Dg" x="-1"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_G9kNRWGyEeSER7JqT575Dg" type="3004" element="_G9eGoWGyEeSER7JqT575Dg">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_G9kNRmGyEeSER7JqT575Dg" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G9kNR2GyEeSER7JqT575Dg"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_G9kNQWGyEeSER7JqT575Dg" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G9kNQmGyEeSER7JqT575Dg" x="79" y="80" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_HgbpwGGyEeSER7JqT575Dg" type="2001" element="_HgPcgGGyEeSER7JqT575Dg">
+            <children xmi:type="notation:Node" xmi:id="_Hgbpw2GyEeSER7JqT575Dg" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_HgbpxGGyEeSER7JqT575Dg" x="-1"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_HgbpxWGyEeSER7JqT575Dg" type="3004" element="_HgPcgWGyEeSER7JqT575Dg">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_HgbpxmGyEeSER7JqT575Dg" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Hgbpx2GyEeSER7JqT575Dg"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_HgbpwWGyEeSER7JqT575Dg" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HgbpwmGyEeSER7JqT575Dg" x="154" y="20" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_IIu_5WGyEeSER7JqT575Dg" type="2001" element="_IIu_4GGyEeSER7JqT575Dg">
+            <children xmi:type="notation:Node" xmi:id="_IIu_6GGyEeSER7JqT575Dg" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_IIu_6WGyEeSER7JqT575Dg" x="-1"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_II1GgGGyEeSER7JqT575Dg" type="3004" element="_IIu_4WGyEeSER7JqT575Dg">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_II1GgWGyEeSER7JqT575Dg" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_II1GgmGyEeSER7JqT575Dg"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_IIu_5mGyEeSER7JqT575Dg" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IIu_52GyEeSER7JqT575Dg" x="24" y="25" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_dADhUGHkEeSIMIyEEDlFYQ" type="2001" element="_c_9asGHkEeSIMIyEEDlFYQ">
+            <children xmi:type="notation:Node" xmi:id="_dADhU2HkEeSIMIyEEDlFYQ" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_dADhVGHkEeSIMIyEEDlFYQ" x="104"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="__FUZYAYaEeWgyZt1kJIJOw" type="3005" element="__FSkMAYaEeWgyZt1kJIJOw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="__FUZYQYaEeWgyZt1kJIJOw" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="__FUZYgYaEeWgyZt1kJIJOw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_dADhUWHkEeSIMIyEEDlFYQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dADhUmHkEeSIMIyEEDlFYQ" x="34" y="230" width="135"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MX8iwGHoEeSie-LjszO4yg" type="2001" element="_MXwVgGHoEeSie-LjszO4yg">
+            <children xmi:type="notation:Node" xmi:id="_MYCpYGHoEeSie-LjszO4yg" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MYCpYWHoEeSie-LjszO4yg" x="-1"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MYIwAGHoEeSie-LjszO4yg" type="3004" element="_MXwVgWHoEeSie-LjszO4yg">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_MYIwAWHoEeSie-LjszO4yg" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MYIwAmHoEeSie-LjszO4yg"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_MX8iwWHoEeSie-LjszO4yg" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MX8iwmHoEeSie-LjszO4yg" x="214" y="80" width="30" height="30"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_0CCXZGGxEeSSybFj2AOb3Q"/>
+          <edges xmi:type="notation:Edge" xmi:id="_fIk_wGGyEeSER7JqT575Dg" type="4001" element="_fIYygGGyEeSER7JqT575Dg" source="_G9kNQGGyEeSER7JqT575Dg" target="_IIu_5WGyEeSER7JqT575Dg">
+            <children xmi:type="notation:Node" xmi:id="_fIk_xGGyEeSER7JqT575Dg" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fIk_xWGyEeSER7JqT575Dg" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_fIk_xmGyEeSER7JqT575Dg" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fIk_x2GyEeSER7JqT575Dg" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_fIk_yGGyEeSER7JqT575Dg" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fIk_yWGyEeSER7JqT575Dg" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_fIk_wWGyEeSER7JqT575Dg" routing="Tree"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_fIk_wmGyEeSER7JqT575Dg" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fIk_w2GyEeSER7JqT575Dg" points="[-10494, -3005, -11760, -770]$[-10438, -3097, -11704, -862]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fIk_ymGyEeSER7JqT575Dg" id="(457.0,143.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fIk_y2GyEeSER7JqT575Dg" id="(0.5,0.5)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_ghtV4GGyEeSER7JqT575Dg" type="4001" element="_ghnPQGGyEeSER7JqT575Dg" source="_G9kNQGGyEeSER7JqT575Dg" target="_HgbpwGGyEeSER7JqT575Dg">
+            <children xmi:type="notation:Node" xmi:id="_ghtV5GGyEeSER7JqT575Dg" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ghtV5WGyEeSER7JqT575Dg" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ghtV5mGyEeSER7JqT575Dg" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ghtV52GyEeSER7JqT575Dg" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ghtV6GGyEeSER7JqT575Dg" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ghtV6WGyEeSER7JqT575Dg" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_ghtV4WGyEeSER7JqT575Dg" routing="Tree"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_ghtV4mGyEeSER7JqT575Dg" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ghtV42GyEeSER7JqT575Dg" points="[-10461, -3068, -8800, -371]$[-10513, -3179, -8852, -482]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ghtV6mGyEeSER7JqT575Dg" id="(457.0,143.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ghtV62GyEeSER7JqT575Dg" id="(0.5,0.5)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_dYG08GHkEeSIMIyEEDlFYQ" type="4001" element="_dX6nsGHkEeSIMIyEEDlFYQ" source="_dADhUGHkEeSIMIyEEDlFYQ" target="_G9kNQGGyEeSER7JqT575Dg">
+            <children xmi:type="notation:Node" xmi:id="_dYM7kGHkEeSIMIyEEDlFYQ" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dYM7kWHkEeSIMIyEEDlFYQ" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_dYM7kmHkEeSIMIyEEDlFYQ" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dYM7k2HkEeSIMIyEEDlFYQ" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_dYM7lGHkEeSIMIyEEDlFYQ" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dYM7lWHkEeSIMIyEEDlFYQ" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_dYG08WHkEeSIMIyEEDlFYQ" routing="Tree"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_dYG08mHkEeSIMIyEEDlFYQ" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dYG082HkEeSIMIyEEDlFYQ" points="[-9298, -5168, -10451, -3113]$[-9240, -5247, -10393, -3192]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dYM7lmHkEeSIMIyEEDlFYQ" id="(405.0,246.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dYM7l2HkEeSIMIyEEDlFYQ" id="(0.5,0.5)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_ObKXsGHoEeSie-LjszO4yg" type="4001" element="_ObEREGHoEeSie-LjszO4yg" source="_dADhUGHkEeSIMIyEEDlFYQ" target="_MX8iwGHoEeSie-LjszO4yg">
+            <children xmi:type="notation:Node" xmi:id="_ObKXtGHoEeSie-LjszO4yg" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ObKXtWHoEeSie-LjszO4yg" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ObKXtmHoEeSie-LjszO4yg" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ObKXt2HoEeSie-LjszO4yg" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ObKXuGHoEeSie-LjszO4yg" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ObKXuWHoEeSie-LjszO4yg" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_ObKXsWHoEeSie-LjszO4yg" routing="Tree"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_ObKXsmHoEeSie-LjszO4yg" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ObKXs2HoEeSie-LjszO4yg" points="[-9175, -5063, -7828, -3354]$[-9240, -5141, -7893, -3432]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ObQeUGHoEeSie-LjszO4yg" id="(405.0,246.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ObQeUWHoEeSie-LjszO4yg" id="(0.5,0.5)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_cQizIGHoEeSxvask4_8wfQ" type="4001" element="_cQKYoGHoEeSxvask4_8wfQ" source="_MX8iwGHoEeSie-LjszO4yg" target="_G9kNQGGyEeSER7JqT575Dg">
+            <children xmi:type="notation:Node" xmi:id="_cQo5wGHoEeSxvask4_8wfQ" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cQo5wWHoEeSxvask4_8wfQ" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_cQvAYGHoEeSxvask4_8wfQ" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cQvAYWHoEeSxvask4_8wfQ" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_cQvAYmHoEeSxvask4_8wfQ" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cQvAY2HoEeSxvask4_8wfQ" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_cQizIWHoEeSxvask4_8wfQ"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_cQizImHoEeSxvask4_8wfQ" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cQizI2HoEeSxvask4_8wfQ" points="[-7840, -3163, -10432, -2964]$[-7762, -3179, -10354, -2980]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cQvAZGHoEeSxvask4_8wfQ" id="(342.0,151.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cQvAZWHoEeSxvask4_8wfQ" id="(450.0,142.0)"/>
+          </edges>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_HgPcgGGyEeSER7JqT575Dg" name="Invalid feature as name" incomingEdges="_ghnPQGGyEeSER7JqT575Dg" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="de.familytree:Man" href="My.familytree#//@members.1"/>
+        <semanticElements xmi:type="de.familytree:Man" href="My.familytree#//@members.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_HgPcgWGyEeSER7JqT575Dg" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_HgPcgmGyEeSER7JqT575Dg"/>
+          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.man']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_HgPcg2GyEeSER7JqT575Dg"/>
+          <color xmi:type="viewpoint:RGBValues" xmi:id="_HgPchGGyEeSER7JqT575Dg"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.man']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_MXwVgGHoEeSie-LjszO4yg" name="Invalid feature as name" outgoingEdges="_cQKYoGHoEeSxvask4_8wfQ" incomingEdges="_ObEREGHoEeSie-LjszO4yg" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="de.familytree:Man" href="My.familytree#//@members.4"/>
+        <semanticElements xmi:type="de.familytree:Man" href="My.familytree#//@members.4"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_MXwVgWHoEeSie-LjszO4yg" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_MXwVgmHoEeSie-LjszO4yg"/>
+          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.man']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_MXwVg2HoEeSie-LjszO4yg"/>
+          <color xmi:type="viewpoint:RGBValues" xmi:id="_MXwVhGHoEeSie-LjszO4yg"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.man']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_G9eGoGGyEeSER7JqT575Dg" name="Marianne" outgoingEdges="_fIYygGGyEeSER7JqT575Dg _ghnPQGGyEeSER7JqT575Dg" incomingEdges="_dX6nsGHkEeSIMIyEEDlFYQ _cQKYoGHoEeSxvask4_8wfQ" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="de.familytree:Woman" href="My.familytree#//@members.0"/>
+        <semanticElements xmi:type="de.familytree:Woman" href="My.familytree#//@members.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_G9eGoWGyEeSER7JqT575Dg" showIcon="false">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_G9eGomGyEeSER7JqT575Dg"/>
+          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_G9eGo2GyEeSER7JqT575Dg"/>
+          <color xmi:type="viewpoint:RGBValues" xmi:id="_G9eGpGGyEeSER7JqT575Dg" red="114" green="159" blue="207"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_IIu_4GGyEeSER7JqT575Dg" name="wparent" incomingEdges="_fIYygGGyEeSER7JqT575Dg" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="de.familytree:Woman" href="My.familytree#//@members.2"/>
+        <semanticElements xmi:type="de.familytree:Woman" href="My.familytree#//@members.2"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_IIu_4WGyEeSER7JqT575Dg" showIcon="false">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_IIu_4mGyEeSER7JqT575Dg"/>
+          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_IIu_42GyEeSER7JqT575Dg"/>
+          <color xmi:type="viewpoint:RGBValues" xmi:id="_IIu_5GGyEeSER7JqT575Dg" red="114" green="159" blue="207"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_c_9asGHkEeSIMIyEEDlFYQ" name="Heidi" outgoingEdges="_dX6nsGHkEeSIMIyEEDlFYQ _ObEREGHoEeSie-LjszO4yg" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="de.familytree:Woman" href="My.familytree#//@members.3"/>
+        <semanticElements xmi:type="de.familytree:Woman" href="My.familytree#//@members.3"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="__FSkMAYaEeWgyZt1kJIJOw" workspacePath="hfghfg/images/Heidi/test.bmp">
+          <customFeatures>workspacePath</customFeatures>
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="__FSkMQYaEeWgyZt1kJIJOw"/>
+          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="__FSkMgYaEeWgyZt1kJIJOw"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_fIYygGGyEeSER7JqT575Dg" sourceNode="_G9eGoGGyEeSER7JqT575Dg" targetNode="_IIu_4GGyEeSER7JqT575Dg">
+        <target xmi:type="de.familytree:Woman" href="My.familytree#//@members.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_fIYygWGyEeSER7JqT575Dg" targetArrow="InputFillClosedArrow" size="2" routingStyle="tree">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.parents']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_fIYygmGyEeSER7JqT575Dg"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_fIYyg2GyEeSER7JqT575Dg" showIcon="false">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_fIYyhGGyEeSER7JqT575Dg"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.parents']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_ghnPQGGyEeSER7JqT575Dg" sourceNode="_G9eGoGGyEeSER7JqT575Dg" targetNode="_HgPcgGGyEeSER7JqT575Dg">
+        <target xmi:type="de.familytree:Woman" href="My.familytree#//@members.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_ghnPQWGyEeSER7JqT575Dg" targetArrow="InputFillClosedArrow" size="2" routingStyle="tree">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.parents']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_ghnPQmGyEeSER7JqT575Dg"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_ghnPQ2GyEeSER7JqT575Dg" showIcon="false">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_ghnPRGGyEeSER7JqT575Dg"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.parents']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_dX6nsGHkEeSIMIyEEDlFYQ" sourceNode="_c_9asGHkEeSIMIyEEDlFYQ" targetNode="_G9eGoGGyEeSER7JqT575Dg">
+        <target xmi:type="de.familytree:Woman" href="My.familytree#//@members.3"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_dX6nsWHkEeSIMIyEEDlFYQ" targetArrow="InputFillClosedArrow" size="2" routingStyle="tree">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.parents']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_dX6nsmHkEeSIMIyEEDlFYQ"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_dX6ns2HkEeSIMIyEEDlFYQ" showIcon="false">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_dX6ntGHkEeSIMIyEEDlFYQ"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.parents']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_ObEREGHoEeSie-LjszO4yg" sourceNode="_c_9asGHkEeSIMIyEEDlFYQ" targetNode="_MXwVgGHoEeSie-LjszO4yg">
+        <target xmi:type="de.familytree:Woman" href="My.familytree#//@members.3"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_ObEREWHoEeSie-LjszO4yg" targetArrow="InputFillClosedArrow" size="2" routingStyle="tree">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.parents']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_ObEREmHoEeSie-LjszO4yg"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_ObERE2HoEeSie-LjszO4yg" showIcon="false">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_ObERFGHoEeSie-LjszO4yg"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.parents']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_cQKYoGHoEeSxvask4_8wfQ" sourceNode="_MXwVgGHoEeSie-LjszO4yg" targetNode="_G9eGoGGyEeSER7JqT575Dg">
+        <target xmi:type="de.familytree:Man" href="My.familytree#//@members.4"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_cQQfQGHoEeSxvask4_8wfQ" lineStyle="dot" targetArrow="NoDecoration" size="2">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.relationship']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_cQQfQWHoEeSxvask4_8wfQ" red="239" green="41" blue="41"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_cQQfQmHoEeSxvask4_8wfQ" showIcon="false">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_cQQfQ2HoEeSxvask4_8wfQ"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.relationship']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_0CCXYWGxEeSSybFj2AOb3Q"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer"/>
+      <target xmi:type="de.familytree:FamilyTree" href="My.familytree#/"/>
+    </ownedRepresentations>
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_GGBUoAYeEeWtUI0Fk-ljRA" initialized="true">
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_LueK4AYeEeWtUI0Fk-ljRA" name="new Familytree">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_LuqYIAYeEeWtUI0Fk-ljRA" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_LuqYIQYeEeWtUI0Fk-ljRA" type="Sirius" element="_LueK4AYeEeWtUI0Fk-ljRA" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_LuwewAYeEeWtUI0Fk-ljRA" type="2001" element="_LueK4QYeEeWtUI0Fk-ljRA">
+            <children xmi:type="notation:Node" xmi:id="_LuwewwYeEeWtUI0Fk-ljRA" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_LuwexAYeEeWtUI0Fk-ljRA" x="31"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_lRLBsAYhEeWtUI0Fk-ljRA" type="3004" element="_lQ3fsAYhEeWtUI0Fk-ljRA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lRLBsQYhEeWtUI0Fk-ljRA" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lRLBsgYhEeWtUI0Fk-ljRA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_LuwewQYeEeWtUI0Fk-ljRA" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LuwewgYeEeWtUI0Fk-ljRA" x="270" y="56" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_LvMjoAYeEeWtUI0Fk-ljRA" type="2001" element="_LueK5gYeEeWtUI0Fk-ljRA">
+            <children xmi:type="notation:Node" xmi:id="_LvNKsAYeEeWtUI0Fk-ljRA" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_LvNKsQYeEeWtUI0Fk-ljRA" x="16" y="-14"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_C0SE0AYjEeWalIAcMLyNMQ" type="3005" element="_C0F3kAYjEeWalIAcMLyNMQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_C0SE0QYjEeWalIAcMLyNMQ" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C0SE0gYjEeWalIAcMLyNMQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_LvMjoQYeEeWtUI0Fk-ljRA" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LvMjogYeEeWtUI0Fk-ljRA" x="175" y="175" width="96"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_LvNxwAYeEeWtUI0Fk-ljRA" type="2001" element="_LueK6wYeEeWtUI0Fk-ljRA">
+            <children xmi:type="notation:Node" xmi:id="_LvOY0AYeEeWtUI0Fk-ljRA" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_LvOY0QYeEeWtUI0Fk-ljRA" x="102"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_lRMP0AYhEeWtUI0Fk-ljRA" type="3004" element="_lQ9mUAYhEeWtUI0Fk-ljRA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lRMP0QYhEeWtUI0Fk-ljRA" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lRMP0gYhEeWtUI0Fk-ljRA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_LvNxwQYeEeWtUI0Fk-ljRA" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LvNxwgYeEeWtUI0Fk-ljRA" x="485" y="175" width="101" height="101"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_LvOY0gYeEeWtUI0Fk-ljRA" type="2001" element="_LueK8AYeEeWtUI0Fk-ljRA">
+            <children xmi:type="notation:Node" xmi:id="_LvO_4AYeEeWtUI0Fk-ljRA" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_LvO_4QYeEeWtUI0Fk-ljRA" x="31"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_lRNd8AYhEeWtUI0Fk-ljRA" type="3004" element="_lQ9mVAYhEeWtUI0Fk-ljRA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lRNd8QYhEeWtUI0Fk-ljRA" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lRNd8gYhEeWtUI0Fk-ljRA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_LvOY0wYeEeWtUI0Fk-ljRA" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LvOY1AYeEeWtUI0Fk-ljRA" x="505" y="35" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_LvO_4gYeEeWtUI0Fk-ljRA" type="2001" element="_LueK9QYeEeWtUI0Fk-ljRA">
+            <children xmi:type="notation:Node" xmi:id="_LvPm8AYeEeWtUI0Fk-ljRA" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_LvPm8QYeEeWtUI0Fk-ljRA" x="76"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ThVDMAYeEeWtUI0Fk-ljRA" type="3005" element="_ThO8kAYeEeWtUI0Fk-ljRA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_ThVDMQYeEeWtUI0Fk-ljRA" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ThVDMgYeEeWtUI0Fk-ljRA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_LvO_4wYeEeWtUI0Fk-ljRA" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LvO_5AYeEeWtUI0Fk-ljRA" x="345" y="265" width="75"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_LuqYIgYeEeWtUI0Fk-ljRA"/>
+          <edges xmi:type="notation:Edge" xmi:id="_LvQODwYeEeWtUI0Fk-ljRA" type="4001" element="_LueK-gYeEeWtUI0Fk-ljRA" source="_LvNxwAYeEeWtUI0Fk-ljRA" target="_LvOY0gYeEeWtUI0Fk-ljRA">
+            <children xmi:type="notation:Node" xmi:id="_LvQOEwYeEeWtUI0Fk-ljRA" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LvQOFAYeEeWtUI0Fk-ljRA" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_LvQOFQYeEeWtUI0Fk-ljRA" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LvQOFgYeEeWtUI0Fk-ljRA" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_LvWUoAYeEeWtUI0Fk-ljRA" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LvWUoQYeEeWtUI0Fk-ljRA" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_LvQOEAYeEeWtUI0Fk-ljRA" routing="Tree"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_LvQOEQYeEeWtUI0Fk-ljRA" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LvQOEgYeEeWtUI0Fk-ljRA" points="[0, 0, -45, 60]$[45, -60, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LvcbQAYeEeWtUI0Fk-ljRA" id="(0.1485148514851485,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LvcbQQYeEeWtUI0Fk-ljRA" id="(0.5,1.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_LvcbQgYeEeWtUI0Fk-ljRA" type="4001" element="_LueK_wYeEeWtUI0Fk-ljRA" source="_LvNxwAYeEeWtUI0Fk-ljRA" target="_LuwewAYeEeWtUI0Fk-ljRA">
+            <children xmi:type="notation:Node" xmi:id="_LvcbRgYeEeWtUI0Fk-ljRA" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LvcbRwYeEeWtUI0Fk-ljRA" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_LvcbSAYeEeWtUI0Fk-ljRA" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LvcbSQYeEeWtUI0Fk-ljRA" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_LvcbSgYeEeWtUI0Fk-ljRA" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LvcbSwYeEeWtUI0Fk-ljRA" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_LvcbQwYeEeWtUI0Fk-ljRA" routing="Tree"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_LvcbRAYeEeWtUI0Fk-ljRA" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LvcbRQYeEeWtUI0Fk-ljRA" points="[0, 28, 120, 36]$[0, 27, 120, 35]$[-120, 27, 0, 35]$[-120, -1, 0, 7]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LvcbTAYeEeWtUI0Fk-ljRA" id="(0.1485148514851485,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LvcbTQYeEeWtUI0Fk-ljRA" id="(0.5,1.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_LvcbTgYeEeWtUI0Fk-ljRA" type="4001" element="_LueLBAYeEeWtUI0Fk-ljRA" source="_LvO_4gYeEeWtUI0Fk-ljRA" target="_LvNxwAYeEeWtUI0Fk-ljRA">
+            <children xmi:type="notation:Node" xmi:id="_Lvih4AYeEeWtUI0Fk-ljRA" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lvih4QYeEeWtUI0Fk-ljRA" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Lvih4gYeEeWtUI0Fk-ljRA" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lvih4wYeEeWtUI0Fk-ljRA" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Lvih5AYeEeWtUI0Fk-ljRA" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lvih5QYeEeWtUI0Fk-ljRA" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_LvcbTwYeEeWtUI0Fk-ljRA" routing="Tree"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_LvcbUAYeEeWtUI0Fk-ljRA" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LvcbUQYeEeWtUI0Fk-ljRA" points="[0, 0, 0, 150]$[0, -150, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Lvih5gYeEeWtUI0Fk-ljRA" id="(0.9466666666666667,0.8181818181818182)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Lvih5wYeEeWtUI0Fk-ljRA" id="(0.1485148514851485,0.297029702970297)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_Lvih6AYeEeWtUI0Fk-ljRA" type="4001" element="_LueLCQYeEeWtUI0Fk-ljRA" source="_LvO_4gYeEeWtUI0Fk-ljRA" target="_LvMjoAYeEeWtUI0Fk-ljRA">
+            <children xmi:type="notation:Node" xmi:id="_Lvih7AYeEeWtUI0Fk-ljRA" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lvih7QYeEeWtUI0Fk-ljRA" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Lvih7gYeEeWtUI0Fk-ljRA" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lvih7wYeEeWtUI0Fk-ljRA" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Lvih8AYeEeWtUI0Fk-ljRA" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lvih8QYeEeWtUI0Fk-ljRA" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_Lvih6QYeEeWtUI0Fk-ljRA" routing="Tree"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_Lvih6gYeEeWtUI0Fk-ljRA" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Lvih6wYeEeWtUI0Fk-ljRA" points="[0, 0, 60, 60]$[-60, -60, 0, 0]"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Lvih8wYeEeWtUI0Fk-ljRA" id="(0.84375,0.21200889547813195)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_Lvih9AYeEeWtUI0Fk-ljRA" type="4001" element="_LueLDgYeEeWtUI0Fk-ljRA" source="_LvMjoAYeEeWtUI0Fk-ljRA" target="_LvNxwAYeEeWtUI0Fk-ljRA">
+            <children xmi:type="notation:Node" xmi:id="_Lvih-AYeEeWtUI0Fk-ljRA" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lvih-QYeEeWtUI0Fk-ljRA" x="50" y="-9"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Lvih-gYeEeWtUI0Fk-ljRA" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lvih-wYeEeWtUI0Fk-ljRA" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Lvih_AYeEeWtUI0Fk-ljRA" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lvih_QYeEeWtUI0Fk-ljRA" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_Lvih9QYeEeWtUI0Fk-ljRA"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_Lvih9gYeEeWtUI0Fk-ljRA" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Lvih9wYeEeWtUI0Fk-ljRA" points="[13, 0, -240, 18]$[227, 0, -26, 18]$[227, 0, -26, 18]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Lvih_gYeEeWtUI0Fk-ljRA" id="(0.8645833333333334,0.7)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Lvih_wYeEeWtUI0Fk-ljRA" id="(0.1485148514851485,0.297029702970297)"/>
+          </edges>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_LueK4QYeEeWtUI0Fk-ljRA" name="mparent s" incomingEdges="_LueK_wYeEeWtUI0Fk-ljRA" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="de.familytree:Man" href="My.familytree#//@members.1"/>
+        <semanticElements xmi:type="de.familytree:Man" href="My.familytree#//@members.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_lQ3fsAYhEeWtUI0Fk-ljRA" showIcon="false">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_lQ3fsQYhEeWtUI0Fk-ljRA"/>
+          <description xmi:type="style:BundledImageDescription" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.man']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_lQ3fsgYhEeWtUI0Fk-ljRA"/>
+          <color xmi:type="viewpoint:RGBValues" xmi:id="_lQ3fswYhEeWtUI0Fk-ljRA"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.man']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_LueK5gYeEeWtUI0Fk-ljRA" name="Peter Schmidt geb. Meyer" outgoingEdges="_LueLDgYeEeWtUI0Fk-ljRA" incomingEdges="_LueLCQYeEeWtUI0Fk-ljRA" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="de.familytree:Man" href="My.familytree#//@members.4"/>
+        <semanticElements xmi:type="de.familytree:Man" href="My.familytree#//@members.4"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_C0F3kAYjEeWalIAcMLyNMQ" showIcon="false" workspacePath="de.familytree.example/images/Heidi/test_border.bmp">
+          <customFeatures>workspacePath</customFeatures>
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_C0F3kQYjEeWalIAcMLyNMQ"/>
+          <description xmi:type="style:BundledImageDescription" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.man']/@conditionnalStyles.0/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_C0F3kgYjEeWalIAcMLyNMQ"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.man']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_LueK6wYeEeWtUI0Fk-ljRA" name="Marianne Schmidt" outgoingEdges="_LueK-gYeEeWtUI0Fk-ljRA _LueK_wYeEeWtUI0Fk-ljRA" incomingEdges="_LueLBAYeEeWtUI0Fk-ljRA _LueLDgYeEeWtUI0Fk-ljRA" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="de.familytree:Woman" href="My.familytree#//@members.0"/>
+        <semanticElements xmi:type="de.familytree:Woman" href="My.familytree#//@members.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_lQ9mUAYhEeWtUI0Fk-ljRA" showIcon="false">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_lQ9mUQYhEeWtUI0Fk-ljRA"/>
+          <description xmi:type="style:BundledImageDescription" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_lQ9mUgYhEeWtUI0Fk-ljRA"/>
+          <color xmi:type="viewpoint:RGBValues" xmi:id="_lQ9mUwYhEeWtUI0Fk-ljRA" red="114" green="159" blue="207"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_LueK8AYeEeWtUI0Fk-ljRA" name="wparent ?" incomingEdges="_LueK-gYeEeWtUI0Fk-ljRA" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="de.familytree:Woman" href="My.familytree#//@members.2"/>
+        <semanticElements xmi:type="de.familytree:Woman" href="My.familytree#//@members.2"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_lQ9mVAYhEeWtUI0Fk-ljRA" showIcon="false">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_lQ9mVQYhEeWtUI0Fk-ljRA"/>
+          <description xmi:type="style:BundledImageDescription" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_lQ9mVgYhEeWtUI0Fk-ljRA"/>
+          <color xmi:type="viewpoint:RGBValues" xmi:id="_lQ9mVwYhEeWtUI0Fk-ljRA" red="114" green="159" blue="207"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_LueK9QYeEeWtUI0Fk-ljRA" name="Heidi Schmidt" outgoingEdges="_LueLBAYeEeWtUI0Fk-ljRA _LueLCQYeEeWtUI0Fk-ljRA" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="de.familytree:Woman" href="My.familytree#//@members.3"/>
+        <semanticElements xmi:type="de.familytree:Woman" href="My.familytree#//@members.3"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_ThO8kAYeEeWtUI0Fk-ljRA" showIcon="false" workspacePath="de.familytree.example/images/Heidi/test.bmp">
+          <customFeatures>workspacePath</customFeatures>
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_ThO8kQYeEeWtUI0Fk-ljRA"/>
+          <description xmi:type="style:BundledImageDescription" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_ThO8kgYeEeWtUI0Fk-ljRA"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_LueK-gYeEeWtUI0Fk-ljRA" sourceNode="_LueK6wYeEeWtUI0Fk-ljRA" targetNode="_LueK8AYeEeWtUI0Fk-ljRA">
+        <target xmi:type="de.familytree:Woman" href="My.familytree#//@members.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_LueK-wYeEeWtUI0Fk-ljRA" targetArrow="NoDecoration" size="2" routingStyle="tree">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.parents']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_LueK_AYeEeWtUI0Fk-ljRA"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_LueK_QYeEeWtUI0Fk-ljRA" showIcon="false">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_LueK_gYeEeWtUI0Fk-ljRA"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.parents']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_LueK_wYeEeWtUI0Fk-ljRA" sourceNode="_LueK6wYeEeWtUI0Fk-ljRA" targetNode="_LueK4QYeEeWtUI0Fk-ljRA">
+        <target xmi:type="de.familytree:Woman" href="My.familytree#//@members.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_LueLAAYeEeWtUI0Fk-ljRA" targetArrow="NoDecoration" size="2" routingStyle="tree">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.parents']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_LueLAQYeEeWtUI0Fk-ljRA"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_LueLAgYeEeWtUI0Fk-ljRA" showIcon="false">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_LueLAwYeEeWtUI0Fk-ljRA"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.parents']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_LueLBAYeEeWtUI0Fk-ljRA" sourceNode="_LueK9QYeEeWtUI0Fk-ljRA" targetNode="_LueK6wYeEeWtUI0Fk-ljRA">
+        <target xmi:type="de.familytree:Woman" href="My.familytree#//@members.3"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_LueLBQYeEeWtUI0Fk-ljRA" targetArrow="NoDecoration" size="2" routingStyle="tree">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.parents']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_LueLBgYeEeWtUI0Fk-ljRA"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_LueLBwYeEeWtUI0Fk-ljRA" showIcon="false">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_LueLCAYeEeWtUI0Fk-ljRA"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.parents']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_LueLCQYeEeWtUI0Fk-ljRA" sourceNode="_LueK9QYeEeWtUI0Fk-ljRA" targetNode="_LueK5gYeEeWtUI0Fk-ljRA">
+        <target xmi:type="de.familytree:Woman" href="My.familytree#//@members.3"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_LueLCgYeEeWtUI0Fk-ljRA" targetArrow="NoDecoration" size="2" routingStyle="tree">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.parents']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_LueLCwYeEeWtUI0Fk-ljRA"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_LueLDAYeEeWtUI0Fk-ljRA" showIcon="false">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_LueLDQYeEeWtUI0Fk-ljRA"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.parents']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_LueLDgYeEeWtUI0Fk-ljRA" name="Married" sourceNode="_LueK5gYeEeWtUI0Fk-ljRA" targetNode="_LueK6wYeEeWtUI0Fk-ljRA">
+        <target xmi:type="de.familytree:Man" href="My.familytree#//@members.4"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_LueLDwYeEeWtUI0Fk-ljRA" lineStyle="dot" sourceArrow="OutputFillClosedArrow" targetArrow="OutputFillClosedArrow" size="2">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.relationship']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_wvrP4AYiEeWalIAcMLyNMQ" red="39" green="76" blue="114"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_LueLEQYeEeWtUI0Fk-ljRA" showIcon="false">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_LueLEgYeEeWtUI0Fk-ljRA"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.relationship']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_LueLEwYeEeWtUI0Fk-ljRA"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer"/>
+      <target xmi:type="de.familytree:FamilyTree" href="My.familytree#/"/>
+    </ownedRepresentations>
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/de.familytree.model.diagram/description/FamilyTree.odesign#//@ownedViewpoints[name='familytree.viewpoint']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>
