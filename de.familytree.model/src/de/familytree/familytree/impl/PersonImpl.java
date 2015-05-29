@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -35,12 +36,14 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link de.familytree.familytree.impl.PersonImpl#getChildren <em>Children</em>}</li>
  *   <li>{@link de.familytree.familytree.impl.PersonImpl#getParents <em>Parents</em>}</li>
  *   <li>{@link de.familytree.familytree.impl.PersonImpl#getDayOfBirth <em>Day Of Birth</em>}</li>
+ *   <li>{@link de.familytree.familytree.impl.PersonImpl#getNameOfBirth <em>Name Of Birth</em>}</li>
  *   <li>{@link de.familytree.familytree.impl.PersonImpl#getRelationshipStatus <em>Relationship Status</em>}</li>
  *   <li>{@link de.familytree.familytree.impl.PersonImpl#isDied <em>Died</em>}</li>
- *   <li>{@link de.familytree.familytree.impl.PersonImpl#getNameOfBirth <em>Name Of Birth</em>}</li>
+ *   <li>{@link de.familytree.familytree.impl.PersonImpl#getDayOfDeath <em>Day Of Death</em>}</li>
  *   <li>{@link de.familytree.familytree.impl.PersonImpl#getLocationOfBirth <em>Location Of Birth</em>}</li>
  *   <li>{@link de.familytree.familytree.impl.PersonImpl#getInRelationWith <em>In Relation With</em>}</li>
  *   <li>{@link de.familytree.familytree.impl.PersonImpl#getInRelationTo <em>In Relation To</em>}</li>
+ *   <li>{@link de.familytree.familytree.impl.PersonImpl#getImagePaths <em>Image Paths</em>}</li>
  * </ul>
  * </p>
  *
@@ -55,7 +58,7 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String FIRST_NAME_EDEFAULT = null;
+	protected static final String FIRST_NAME_EDEFAULT = "?";
 
 	/**
 	 * The cached value of the '{@link #getFirstName() <em>First Name</em>}' attribute.
@@ -75,7 +78,7 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String SECOND_NAME_EDEFAULT = null;
+	protected static final String SECOND_NAME_EDEFAULT = "?";
 
 	/**
 	 * The cached value of the '{@link #getSecondName() <em>Second Name</em>}' attribute.
@@ -128,6 +131,26 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 	protected Date dayOfBirth = DAY_OF_BIRTH_EDEFAULT;
 
 	/**
+	 * The default value of the '{@link #getNameOfBirth() <em>Name Of Birth</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNameOfBirth()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_OF_BIRTH_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getNameOfBirth() <em>Name Of Birth</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNameOfBirth()
+	 * @generated
+	 * @ordered
+	 */
+	protected String nameOfBirth = NAME_OF_BIRTH_EDEFAULT;
+
+	/**
 	 * The default value of the '{@link #getRelationshipStatus() <em>Relationship Status</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -168,24 +191,24 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 	protected boolean died = DIED_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getNameOfBirth() <em>Name Of Birth</em>}' attribute.
+	 * The default value of the '{@link #getDayOfDeath() <em>Day Of Death</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNameOfBirth()
+	 * @see #getDayOfDeath()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String NAME_OF_BIRTH_EDEFAULT = null;
+	protected static final Date DAY_OF_DEATH_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getNameOfBirth() <em>Name Of Birth</em>}' attribute.
+	 * The cached value of the '{@link #getDayOfDeath() <em>Day Of Death</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNameOfBirth()
+	 * @see #getDayOfDeath()
 	 * @generated
 	 * @ordered
 	 */
-	protected String nameOfBirth = NAME_OF_BIRTH_EDEFAULT;
+	protected Date dayOfDeath = DAY_OF_DEATH_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getLocationOfBirth() <em>Location Of Birth</em>}' attribute.
@@ -226,6 +249,16 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 	 * @ordered
 	 */
 	protected Person inRelationTo;
+
+	/**
+	 * The cached value of the '{@link #getImagePaths() <em>Image Paths</em>}' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getImagePaths()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<String> imagePaths;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -373,6 +406,27 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 		died = newDied;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, FamilytreePackage.PERSON__DIED, oldDied, died));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Date getDayOfDeath() {
+		return dayOfDeath;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDayOfDeath(Date newDayOfDeath) {
+		Date oldDayOfDeath = dayOfDeath;
+		dayOfDeath = newDayOfDeath;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FamilytreePackage.PERSON__DAY_OF_DEATH, oldDayOfDeath, dayOfDeath));
 	}
 
 	/**
@@ -542,6 +596,18 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<String> getImagePaths() {
+		if (imagePaths == null) {
+			imagePaths = new EDataTypeUniqueEList<String>(String.class, this, FamilytreePackage.PERSON__IMAGE_PATHS);
+		}
+		return imagePaths;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -600,12 +666,14 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 				return getParents();
 			case FamilytreePackage.PERSON__DAY_OF_BIRTH:
 				return getDayOfBirth();
+			case FamilytreePackage.PERSON__NAME_OF_BIRTH:
+				return getNameOfBirth();
 			case FamilytreePackage.PERSON__RELATIONSHIP_STATUS:
 				return getRelationshipStatus();
 			case FamilytreePackage.PERSON__DIED:
 				return isDied();
-			case FamilytreePackage.PERSON__NAME_OF_BIRTH:
-				return getNameOfBirth();
+			case FamilytreePackage.PERSON__DAY_OF_DEATH:
+				return getDayOfDeath();
 			case FamilytreePackage.PERSON__LOCATION_OF_BIRTH:
 				return getLocationOfBirth();
 			case FamilytreePackage.PERSON__IN_RELATION_WITH:
@@ -614,6 +682,8 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 			case FamilytreePackage.PERSON__IN_RELATION_TO:
 				if (resolve) return getInRelationTo();
 				return basicGetInRelationTo();
+			case FamilytreePackage.PERSON__IMAGE_PATHS:
+				return getImagePaths();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -644,14 +714,17 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 			case FamilytreePackage.PERSON__DAY_OF_BIRTH:
 				setDayOfBirth((Date)newValue);
 				return;
+			case FamilytreePackage.PERSON__NAME_OF_BIRTH:
+				setNameOfBirth((String)newValue);
+				return;
 			case FamilytreePackage.PERSON__RELATIONSHIP_STATUS:
 				setRelationshipStatus((RelationshipStatus)newValue);
 				return;
 			case FamilytreePackage.PERSON__DIED:
 				setDied((Boolean)newValue);
 				return;
-			case FamilytreePackage.PERSON__NAME_OF_BIRTH:
-				setNameOfBirth((String)newValue);
+			case FamilytreePackage.PERSON__DAY_OF_DEATH:
+				setDayOfDeath((Date)newValue);
 				return;
 			case FamilytreePackage.PERSON__LOCATION_OF_BIRTH:
 				setLocationOfBirth((String)newValue);
@@ -661,6 +734,10 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 				return;
 			case FamilytreePackage.PERSON__IN_RELATION_TO:
 				setInRelationTo((Person)newValue);
+				return;
+			case FamilytreePackage.PERSON__IMAGE_PATHS:
+				getImagePaths().clear();
+				getImagePaths().addAll((Collection<? extends String>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -689,14 +766,17 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 			case FamilytreePackage.PERSON__DAY_OF_BIRTH:
 				setDayOfBirth(DAY_OF_BIRTH_EDEFAULT);
 				return;
+			case FamilytreePackage.PERSON__NAME_OF_BIRTH:
+				setNameOfBirth(NAME_OF_BIRTH_EDEFAULT);
+				return;
 			case FamilytreePackage.PERSON__RELATIONSHIP_STATUS:
 				setRelationshipStatus(RELATIONSHIP_STATUS_EDEFAULT);
 				return;
 			case FamilytreePackage.PERSON__DIED:
 				setDied(DIED_EDEFAULT);
 				return;
-			case FamilytreePackage.PERSON__NAME_OF_BIRTH:
-				setNameOfBirth(NAME_OF_BIRTH_EDEFAULT);
+			case FamilytreePackage.PERSON__DAY_OF_DEATH:
+				setDayOfDeath(DAY_OF_DEATH_EDEFAULT);
 				return;
 			case FamilytreePackage.PERSON__LOCATION_OF_BIRTH:
 				setLocationOfBirth(LOCATION_OF_BIRTH_EDEFAULT);
@@ -706,6 +786,9 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 				return;
 			case FamilytreePackage.PERSON__IN_RELATION_TO:
 				setInRelationTo((Person)null);
+				return;
+			case FamilytreePackage.PERSON__IMAGE_PATHS:
+				getImagePaths().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -729,18 +812,22 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 				return parents != null && !parents.isEmpty();
 			case FamilytreePackage.PERSON__DAY_OF_BIRTH:
 				return DAY_OF_BIRTH_EDEFAULT == null ? dayOfBirth != null : !DAY_OF_BIRTH_EDEFAULT.equals(dayOfBirth);
+			case FamilytreePackage.PERSON__NAME_OF_BIRTH:
+				return NAME_OF_BIRTH_EDEFAULT == null ? nameOfBirth != null : !NAME_OF_BIRTH_EDEFAULT.equals(nameOfBirth);
 			case FamilytreePackage.PERSON__RELATIONSHIP_STATUS:
 				return relationshipStatus != RELATIONSHIP_STATUS_EDEFAULT;
 			case FamilytreePackage.PERSON__DIED:
 				return died != DIED_EDEFAULT;
-			case FamilytreePackage.PERSON__NAME_OF_BIRTH:
-				return NAME_OF_BIRTH_EDEFAULT == null ? nameOfBirth != null : !NAME_OF_BIRTH_EDEFAULT.equals(nameOfBirth);
+			case FamilytreePackage.PERSON__DAY_OF_DEATH:
+				return DAY_OF_DEATH_EDEFAULT == null ? dayOfDeath != null : !DAY_OF_DEATH_EDEFAULT.equals(dayOfDeath);
 			case FamilytreePackage.PERSON__LOCATION_OF_BIRTH:
 				return LOCATION_OF_BIRTH_EDEFAULT == null ? locationOfBirth != null : !LOCATION_OF_BIRTH_EDEFAULT.equals(locationOfBirth);
 			case FamilytreePackage.PERSON__IN_RELATION_WITH:
 				return inRelationWith != null;
 			case FamilytreePackage.PERSON__IN_RELATION_TO:
 				return inRelationTo != null;
+			case FamilytreePackage.PERSON__IMAGE_PATHS:
+				return imagePaths != null && !imagePaths.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -761,14 +848,18 @@ public abstract class PersonImpl extends MinimalEObjectImpl.Container implements
 		result.append(secondName);
 		result.append(", dayOfBirth: ");
 		result.append(dayOfBirth);
+		result.append(", nameOfBirth: ");
+		result.append(nameOfBirth);
 		result.append(", relationshipStatus: ");
 		result.append(relationshipStatus);
 		result.append(", died: ");
 		result.append(died);
-		result.append(", nameOfBirth: ");
-		result.append(nameOfBirth);
+		result.append(", dayOfDeath: ");
+		result.append(dayOfDeath);
 		result.append(", locationOfBirth: ");
 		result.append(locationOfBirth);
+		result.append(", imagePaths: ");
+		result.append(imagePaths);
 		result.append(')');
 		return result.toString();
 	}

@@ -113,13 +113,22 @@ public interface FamilytreePackage extends EPackage {
 	int PERSON__DAY_OF_BIRTH = 4;
 
 	/**
+	 * The feature id for the '<em><b>Name Of Birth</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__NAME_OF_BIRTH = 5;
+
+	/**
 	 * The feature id for the '<em><b>Relationship Status</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON__RELATIONSHIP_STATUS = 5;
+	int PERSON__RELATIONSHIP_STATUS = 6;
 
 	/**
 	 * The feature id for the '<em><b>Died</b></em>' attribute.
@@ -128,16 +137,16 @@ public interface FamilytreePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON__DIED = 6;
+	int PERSON__DIED = 7;
 
 	/**
-	 * The feature id for the '<em><b>Name Of Birth</b></em>' attribute.
+	 * The feature id for the '<em><b>Day Of Death</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON__NAME_OF_BIRTH = 7;
+	int PERSON__DAY_OF_DEATH = 8;
 
 	/**
 	 * The feature id for the '<em><b>Location Of Birth</b></em>' attribute.
@@ -146,7 +155,7 @@ public interface FamilytreePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON__LOCATION_OF_BIRTH = 8;
+	int PERSON__LOCATION_OF_BIRTH = 9;
 
 	/**
 	 * The feature id for the '<em><b>In Relation With</b></em>' reference.
@@ -155,7 +164,7 @@ public interface FamilytreePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON__IN_RELATION_WITH = 9;
+	int PERSON__IN_RELATION_WITH = 10;
 
 	/**
 	 * The feature id for the '<em><b>In Relation To</b></em>' reference.
@@ -164,7 +173,16 @@ public interface FamilytreePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON__IN_RELATION_TO = 10;
+	int PERSON__IN_RELATION_TO = 11;
+
+	/**
+	 * The feature id for the '<em><b>Image Paths</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__IMAGE_PATHS = 12;
 
 	/**
 	 * The number of structural features of the '<em>Person</em>' class.
@@ -173,7 +191,7 @@ public interface FamilytreePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_FEATURE_COUNT = 11;
+	int PERSON_FEATURE_COUNT = 13;
 
 	/**
 	 * The number of operations of the '<em>Person</em>' class.
@@ -277,6 +295,15 @@ public interface FamilytreePackage extends EPackage {
 	int WOMAN__DAY_OF_BIRTH = PERSON__DAY_OF_BIRTH;
 
 	/**
+	 * The feature id for the '<em><b>Name Of Birth</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WOMAN__NAME_OF_BIRTH = PERSON__NAME_OF_BIRTH;
+
+	/**
 	 * The feature id for the '<em><b>Relationship Status</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -295,13 +322,13 @@ public interface FamilytreePackage extends EPackage {
 	int WOMAN__DIED = PERSON__DIED;
 
 	/**
-	 * The feature id for the '<em><b>Name Of Birth</b></em>' attribute.
+	 * The feature id for the '<em><b>Day Of Death</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WOMAN__NAME_OF_BIRTH = PERSON__NAME_OF_BIRTH;
+	int WOMAN__DAY_OF_DEATH = PERSON__DAY_OF_DEATH;
 
 	/**
 	 * The feature id for the '<em><b>Location Of Birth</b></em>' attribute.
@@ -329,6 +356,15 @@ public interface FamilytreePackage extends EPackage {
 	 * @ordered
 	 */
 	int WOMAN__IN_RELATION_TO = PERSON__IN_RELATION_TO;
+
+	/**
+	 * The feature id for the '<em><b>Image Paths</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WOMAN__IMAGE_PATHS = PERSON__IMAGE_PATHS;
 
 	/**
 	 * The number of structural features of the '<em>Woman</em>' class.
@@ -404,6 +440,15 @@ public interface FamilytreePackage extends EPackage {
 	int MAN__DAY_OF_BIRTH = PERSON__DAY_OF_BIRTH;
 
 	/**
+	 * The feature id for the '<em><b>Name Of Birth</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAN__NAME_OF_BIRTH = PERSON__NAME_OF_BIRTH;
+
+	/**
 	 * The feature id for the '<em><b>Relationship Status</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -422,13 +467,13 @@ public interface FamilytreePackage extends EPackage {
 	int MAN__DIED = PERSON__DIED;
 
 	/**
-	 * The feature id for the '<em><b>Name Of Birth</b></em>' attribute.
+	 * The feature id for the '<em><b>Day Of Death</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MAN__NAME_OF_BIRTH = PERSON__NAME_OF_BIRTH;
+	int MAN__DAY_OF_DEATH = PERSON__DAY_OF_DEATH;
 
 	/**
 	 * The feature id for the '<em><b>Location Of Birth</b></em>' attribute.
@@ -456,6 +501,15 @@ public interface FamilytreePackage extends EPackage {
 	 * @ordered
 	 */
 	int MAN__IN_RELATION_TO = PERSON__IN_RELATION_TO;
+
+	/**
+	 * The feature id for the '<em><b>Image Paths</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAN__IMAGE_PATHS = PERSON__IMAGE_PATHS;
 
 	/**
 	 * The number of structural features of the '<em>Man</em>' class.
@@ -574,6 +628,17 @@ public interface FamilytreePackage extends EPackage {
 	EAttribute getPerson_Died();
 
 	/**
+	 * Returns the meta object for the attribute '{@link de.familytree.familytree.Person#getDayOfDeath <em>Day Of Death</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Day Of Death</em>'.
+	 * @see de.familytree.familytree.Person#getDayOfDeath()
+	 * @see #getPerson()
+	 * @generated
+	 */
+	EAttribute getPerson_DayOfDeath();
+
+	/**
 	 * Returns the meta object for the attribute '{@link de.familytree.familytree.Person#getNameOfBirth <em>Name Of Birth</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -616,6 +681,17 @@ public interface FamilytreePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getPerson_InRelationTo();
+
+	/**
+	 * Returns the meta object for the attribute list '{@link de.familytree.familytree.Person#getImagePaths <em>Image Paths</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute list '<em>Image Paths</em>'.
+	 * @see de.familytree.familytree.Person#getImagePaths()
+	 * @see #getPerson()
+	 * @generated
+	 */
+	EAttribute getPerson_ImagePaths();
 
 	/**
 	 * Returns the meta object for class '{@link de.familytree.familytree.FamilyTree <em>Family Tree</em>}'.
@@ -758,6 +834,14 @@ public interface FamilytreePackage extends EPackage {
 		EAttribute PERSON__DIED = eINSTANCE.getPerson_Died();
 
 		/**
+		 * The meta object literal for the '<em><b>Day Of Death</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PERSON__DAY_OF_DEATH = eINSTANCE.getPerson_DayOfDeath();
+
+		/**
 		 * The meta object literal for the '<em><b>Name Of Birth</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -788,6 +872,14 @@ public interface FamilytreePackage extends EPackage {
 		 * @generated
 		 */
 		EReference PERSON__IN_RELATION_TO = eINSTANCE.getPerson_InRelationTo();
+
+		/**
+		 * The meta object literal for the '<em><b>Image Paths</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PERSON__IMAGE_PATHS = eINSTANCE.getPerson_ImagePaths();
 
 		/**
 		 * The meta object literal for the '{@link de.familytree.familytree.impl.FamilyTreeImpl <em>Family Tree</em>}' class.

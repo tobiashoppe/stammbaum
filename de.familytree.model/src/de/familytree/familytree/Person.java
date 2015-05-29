@@ -21,12 +21,14 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link de.familytree.familytree.Person#getChildren <em>Children</em>}</li>
  *   <li>{@link de.familytree.familytree.Person#getParents <em>Parents</em>}</li>
  *   <li>{@link de.familytree.familytree.Person#getDayOfBirth <em>Day Of Birth</em>}</li>
+ *   <li>{@link de.familytree.familytree.Person#getNameOfBirth <em>Name Of Birth</em>}</li>
  *   <li>{@link de.familytree.familytree.Person#getRelationshipStatus <em>Relationship Status</em>}</li>
  *   <li>{@link de.familytree.familytree.Person#isDied <em>Died</em>}</li>
- *   <li>{@link de.familytree.familytree.Person#getNameOfBirth <em>Name Of Birth</em>}</li>
+ *   <li>{@link de.familytree.familytree.Person#getDayOfDeath <em>Day Of Death</em>}</li>
  *   <li>{@link de.familytree.familytree.Person#getLocationOfBirth <em>Location Of Birth</em>}</li>
  *   <li>{@link de.familytree.familytree.Person#getInRelationWith <em>In Relation With</em>}</li>
  *   <li>{@link de.familytree.familytree.Person#getInRelationTo <em>In Relation To</em>}</li>
+ *   <li>{@link de.familytree.familytree.Person#getImagePaths <em>Image Paths</em>}</li>
  * </ul>
  * </p>
  *
@@ -37,6 +39,7 @@ import org.eclipse.emf.ecore.EObject;
 public interface Person extends EObject {
 	/**
 	 * Returns the value of the '<em><b>First Name</b></em>' attribute.
+	 * The default value is <code>"?"</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>First Name</em>' attribute isn't clear,
@@ -46,7 +49,7 @@ public interface Person extends EObject {
 	 * @return the value of the '<em>First Name</em>' attribute.
 	 * @see #setFirstName(String)
 	 * @see de.familytree.familytree.FamilytreePackage#getPerson_FirstName()
-	 * @model
+	 * @model default="?"
 	 * @generated
 	 */
 	String getFirstName();
@@ -63,6 +66,7 @@ public interface Person extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Second Name</b></em>' attribute.
+	 * The default value is <code>"?"</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Second Name</em>' attribute isn't clear,
@@ -72,7 +76,7 @@ public interface Person extends EObject {
 	 * @return the value of the '<em>Second Name</em>' attribute.
 	 * @see #setSecondName(String)
 	 * @see de.familytree.familytree.FamilytreePackage#getPerson_SecondName()
-	 * @model
+	 * @model default="?"
 	 * @generated
 	 */
 	String getSecondName();
@@ -206,6 +210,32 @@ public interface Person extends EObject {
 	void setDied(boolean value);
 
 	/**
+	 * Returns the value of the '<em><b>Day Of Death</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Day Of Death</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Day Of Death</em>' attribute.
+	 * @see #setDayOfDeath(Date)
+	 * @see de.familytree.familytree.FamilytreePackage#getPerson_DayOfDeath()
+	 * @model
+	 * @generated
+	 */
+	Date getDayOfDeath();
+
+	/**
+	 * Sets the value of the '{@link de.familytree.familytree.Person#getDayOfDeath <em>Day Of Death</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Day Of Death</em>' attribute.
+	 * @see #getDayOfDeath()
+	 * @generated
+	 */
+	void setDayOfDeath(Date value);
+
+	/**
 	 * Returns the value of the '<em><b>Name Of Birth</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -312,5 +342,21 @@ public interface Person extends EObject {
 	 * @generated
 	 */
 	void setInRelationTo(Person value);
+
+	/**
+	 * Returns the value of the '<em><b>Image Paths</b></em>' attribute list.
+	 * The list contents are of type {@link java.lang.String}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Image Paths</em>' attribute list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Image Paths</em>' attribute list.
+	 * @see de.familytree.familytree.FamilytreePackage#getPerson_ImagePaths()
+	 * @model
+	 * @generated
+	 */
+	EList<String> getImagePaths();
 
 } // Person

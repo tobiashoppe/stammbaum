@@ -181,15 +181,6 @@ public class FamilytreePackageImpl extends EPackageImpl implements FamilytreePac
 	 * @generated
 	 */
 	public EAttribute getPerson_RelationshipStatus() {
-		return (EAttribute)personEClass.getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getPerson_Died() {
 		return (EAttribute)personEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -198,7 +189,7 @@ public class FamilytreePackageImpl extends EPackageImpl implements FamilytreePac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPerson_NameOfBirth() {
+	public EAttribute getPerson_Died() {
 		return (EAttribute)personEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -207,7 +198,7 @@ public class FamilytreePackageImpl extends EPackageImpl implements FamilytreePac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPerson_LocationOfBirth() {
+	public EAttribute getPerson_DayOfDeath() {
 		return (EAttribute)personEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -216,8 +207,26 @@ public class FamilytreePackageImpl extends EPackageImpl implements FamilytreePac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getPerson_NameOfBirth() {
+		return (EAttribute)personEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPerson_LocationOfBirth() {
+		return (EAttribute)personEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EReference getPerson_InRelationWith() {
-		return (EReference)personEClass.getEStructuralFeatures().get(9);
+		return (EReference)personEClass.getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -226,7 +235,16 @@ public class FamilytreePackageImpl extends EPackageImpl implements FamilytreePac
 	 * @generated
 	 */
 	public EReference getPerson_InRelationTo() {
-		return (EReference)personEClass.getEStructuralFeatures().get(10);
+		return (EReference)personEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPerson_ImagePaths() {
+		return (EAttribute)personEClass.getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -308,12 +326,14 @@ public class FamilytreePackageImpl extends EPackageImpl implements FamilytreePac
 		createEReference(personEClass, PERSON__CHILDREN);
 		createEReference(personEClass, PERSON__PARENTS);
 		createEAttribute(personEClass, PERSON__DAY_OF_BIRTH);
+		createEAttribute(personEClass, PERSON__NAME_OF_BIRTH);
 		createEAttribute(personEClass, PERSON__RELATIONSHIP_STATUS);
 		createEAttribute(personEClass, PERSON__DIED);
-		createEAttribute(personEClass, PERSON__NAME_OF_BIRTH);
+		createEAttribute(personEClass, PERSON__DAY_OF_DEATH);
 		createEAttribute(personEClass, PERSON__LOCATION_OF_BIRTH);
 		createEReference(personEClass, PERSON__IN_RELATION_WITH);
 		createEReference(personEClass, PERSON__IN_RELATION_TO);
+		createEAttribute(personEClass, PERSON__IMAGE_PATHS);
 
 		familyTreeEClass = createEClass(FAMILY_TREE);
 		createEReference(familyTreeEClass, FAMILY_TREE__MEMBERS);
@@ -359,17 +379,19 @@ public class FamilytreePackageImpl extends EPackageImpl implements FamilytreePac
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(personEClass, Person.class, "Person", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getPerson_FirstName(), ecorePackage.getEString(), "firstName", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPerson_SecondName(), ecorePackage.getEString(), "secondName", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPerson_FirstName(), ecorePackage.getEString(), "firstName", "?", 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPerson_SecondName(), ecorePackage.getEString(), "secondName", "?", 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPerson_Children(), this.getPerson(), this.getPerson_Parents(), "children", null, 0, -1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPerson_Parents(), this.getPerson(), this.getPerson_Children(), "parents", null, 0, 2, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerson_DayOfBirth(), ecorePackage.getEDate(), "dayOfBirth", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPerson_NameOfBirth(), ecorePackage.getEString(), "nameOfBirth", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerson_RelationshipStatus(), this.getRelationshipStatus(), "relationshipStatus", null, 1, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerson_Died(), ecorePackage.getEBoolean(), "died", "false", 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPerson_NameOfBirth(), ecorePackage.getEString(), "nameOfBirth", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPerson_DayOfDeath(), ecorePackage.getEDate(), "dayOfDeath", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerson_LocationOfBirth(), ecorePackage.getEString(), "locationOfBirth", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPerson_InRelationWith(), this.getPerson(), this.getPerson_InRelationTo(), "inRelationWith", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPerson_InRelationTo(), this.getPerson(), this.getPerson_InRelationWith(), "inRelationTo", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPerson_ImagePaths(), ecorePackage.getEString(), "imagePaths", null, 0, -1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(familyTreeEClass, FamilyTree.class, "FamilyTree", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFamilyTree_Members(), this.getPerson(), null, "members", null, 0, -1, FamilyTree.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

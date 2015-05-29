@@ -5,21 +5,35 @@
       <metamodel href="../../de.familytree.model/model/familytree.ecore#/"/>
       <defaultLayer name="Default">
         <nodeMappings name="familytree.man" semanticCandidatesExpression="feature:members" domainClass="familytree.Man">
-          <style xsi:type="style:BundledImageDescription" labelExpression="feature:firstName" resizeKind="NSEW">
+          <style xsi:type="style:BundledImageDescription" showIcon="false" labelExpression="ocl:self.firstName + ' ' +  self.secondName" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
+          <conditionnalStyles predicateExpression="ocl:(self.nameOfBirth &lt;> null and self.nameOfBirth &lt;> '')">
+            <style xsi:type="style:BundledImageDescription" showIcon="false" labelExpression="ocl:self.firstName + ' ' +  self.secondName + ' geb. ' + self.nameOfBirth" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
         </nodeMappings>
         <nodeMappings name="familytree.woman" semanticCandidatesExpression="feature:members" domainClass="familytree.Woman">
-          <style xsi:type="style:BundledImageDescription" labelExpression="feature:firstName" resizeKind="NSEW">
+          <style xsi:type="style:BundledImageDescription" showIcon="false" labelExpression="ocl:self.firstName + ' ' +  self.secondName" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
           </style>
+          <conditionnalStyles predicateExpression="ocl:(self.nameOfBirth &lt;> null and self.nameOfBirth &lt;> '')">
+            <style xsi:type="style:BundledImageDescription" showIcon="false" labelExpression="ocl:self.firstName + ' ' +  self.secondName + ' geb. ' + self.nameOfBirth" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            </style>
+          </conditionnalStyles>
         </nodeMappings>
         <edgeMappings name="familytree.parents" label="Parents" sourceMapping="//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.man'] //@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']" targetMapping="//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.man'] //@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']" targetFinderExpression="feature:parents">
-          <style targetArrow="InputFillClosedArrow" sizeComputationExpression="2" routingStyle="tree">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2" routingStyle="tree">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <centerLabelStyleDescription showIcon="false">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -27,9 +41,9 @@
           </style>
         </edgeMappings>
         <edgeMappings name="familytree.relationship" label="Relationship" sourceMapping="//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.man'] //@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']" targetMapping="//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.man'] //@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']" targetFinderExpression="feature:inRelationWith">
-          <style lineStyle="dot" targetArrow="NoDecoration" sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
-            <centerLabelStyleDescription showIcon="false">
+          <style lineStyle="dot" sourceArrow="OutputFillClosedArrow" targetArrow="OutputFillClosedArrow" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <centerLabelStyleDescription showIcon="false" labelExpression="feature:relationshipStatus">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
           </style>

@@ -65,12 +65,14 @@ public class PersonItemProvider
 			addChildrenPropertyDescriptor(object);
 			addParentsPropertyDescriptor(object);
 			addDayOfBirthPropertyDescriptor(object);
+			addNameOfBirthPropertyDescriptor(object);
 			addRelationshipStatusPropertyDescriptor(object);
 			addDiedPropertyDescriptor(object);
-			addNameOfBirthPropertyDescriptor(object);
+			addDayOfDeathPropertyDescriptor(object);
 			addLocationOfBirthPropertyDescriptor(object);
 			addInRelationWithPropertyDescriptor(object);
 			addInRelationToPropertyDescriptor(object);
+			addImagePathsPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -230,6 +232,28 @@ public class PersonItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Day Of Death feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addDayOfDeathPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Person_dayOfDeath_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Person_dayOfDeath_feature", "_UI_Person_type"),
+				 FamilytreePackage.Literals.PERSON__DAY_OF_DEATH,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This adds a property descriptor for the Name Of Birth feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -318,6 +342,28 @@ public class PersonItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Image Paths feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addImagePathsPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Person_imagePaths_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Person_imagePaths_feature", "_UI_Person_type"),
+				 FamilytreePackage.Literals.PERSON__IMAGE_PATHS,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns Person.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -358,10 +404,12 @@ public class PersonItemProvider
 			case FamilytreePackage.PERSON__FIRST_NAME:
 			case FamilytreePackage.PERSON__SECOND_NAME:
 			case FamilytreePackage.PERSON__DAY_OF_BIRTH:
+			case FamilytreePackage.PERSON__NAME_OF_BIRTH:
 			case FamilytreePackage.PERSON__RELATIONSHIP_STATUS:
 			case FamilytreePackage.PERSON__DIED:
-			case FamilytreePackage.PERSON__NAME_OF_BIRTH:
+			case FamilytreePackage.PERSON__DAY_OF_DEATH:
 			case FamilytreePackage.PERSON__LOCATION_OF_BIRTH:
+			case FamilytreePackage.PERSON__IMAGE_PATHS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}
