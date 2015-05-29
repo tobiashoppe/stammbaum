@@ -5,6 +5,7 @@ package de.familytree.familytree.impl;
 import de.familytree.familytree.*;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -69,6 +70,36 @@ public class FamilytreeFactoryImpl extends EFactoryImpl implements FamilytreeFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public Object createFromString(EDataType eDataType, String initialValue) {
+		switch (eDataType.getClassifierID()) {
+			case FamilytreePackage.RELATIONSHIP_STATUS:
+				return createRelationshipStatusFromString(eDataType, initialValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String convertToString(EDataType eDataType, Object instanceValue) {
+		switch (eDataType.getClassifierID()) {
+			case FamilytreePackage.RELATIONSHIP_STATUS:
+				return convertRelationshipStatusToString(eDataType, instanceValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public FamilyTree createFamilyTree() {
 		FamilyTreeImpl familyTree = new FamilyTreeImpl();
 		return familyTree;
@@ -92,6 +123,26 @@ public class FamilytreeFactoryImpl extends EFactoryImpl implements FamilytreeFac
 	public Man createMan() {
 		ManImpl man = new ManImpl();
 		return man;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RelationshipStatus createRelationshipStatusFromString(EDataType eDataType, String initialValue) {
+		RelationshipStatus result = RelationshipStatus.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertRelationshipStatusToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
 	}
 
 	/**

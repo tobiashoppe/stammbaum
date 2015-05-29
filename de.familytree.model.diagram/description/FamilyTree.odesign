@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="FamilyTree" version="8.1.0">
-  <ownedViewpoints name="familytree.viewpoint" modelFileExtension="*familytree">
-    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="familytree.familytree" label="Familytree" initialisation="true" domainClass="familytree.FamilyTree">
+  <ownedViewpoints name="familytree.viewpoint" modelFileExtension="familytree">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="familytree.familytree" label="Familytree" domainClass="familytree.FamilyTree">
       <metamodel href="../../de.familytree.model/model/familytree.ecore#/"/>
       <defaultLayer name="Default">
-        <nodeMappings name="familytree.man" domainClass="familytree.Man">
+        <nodeMappings name="familytree.man" semanticCandidatesExpression="feature:members" domainClass="familytree.Man">
           <style xsi:type="style:BundledImageDescription" labelExpression="feature:firstName" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="familytree.woman" domainClass="familytree.Woman">
+        <nodeMappings name="familytree.woman" semanticCandidatesExpression="feature:members" domainClass="familytree.Woman">
           <style xsi:type="style:BundledImageDescription" labelExpression="feature:firstName" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -21,6 +21,14 @@
         <edgeMappings name="familytree.parents" label="Parents" sourceMapping="//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.man'] //@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']" targetMapping="//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.man'] //@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']" targetFinderExpression="feature:parents">
           <style targetArrow="InputFillClosedArrow" sizeComputationExpression="2" routingStyle="tree">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription showIcon="false">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="familytree.relationship" label="Relationship" sourceMapping="//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.man'] //@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']" targetMapping="//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.man'] //@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@nodeMappings[name='familytree.woman']" targetFinderExpression="feature:inRelationWith">
+          <style lineStyle="dot" targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
             <centerLabelStyleDescription showIcon="false">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
@@ -48,6 +56,15 @@
             <targetViewVariable name="targetView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:SetValue" featureName="parents" valueExpression="var:target"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="familytree.creation.relationshipWith" label="Relationship creation" edgeMappings="//@ownedViewpoints[name='familytree.viewpoint']/@ownedRepresentations[name='familytree.familytree']/@defaultLayer/@edgeMappings[name='familytree.relationship']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="inRelationWith" valueExpression="var:target"/>
             </initialOperation>
           </ownedTools>
         </toolSections>

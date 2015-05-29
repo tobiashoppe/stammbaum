@@ -5,12 +5,18 @@ package de.familytree.familytree.impl;
 import de.familytree.familytree.FamilyTree;
 import de.familytree.familytree.FamilytreePackage;
 import de.familytree.familytree.Person;
+
 import java.util.Collection;
+
 import org.eclipse.emf.common.notify.NotificationChain;
+
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
+
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -21,7 +27,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link de.familytree.familytree.impl.FamilyTreeImpl#getPersons <em>Persons</em>}</li>
+ *   <li>{@link de.familytree.familytree.impl.FamilyTreeImpl#getMembers <em>Members</em>}</li>
  * </ul>
  * </p>
  *
@@ -29,14 +35,14 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class FamilyTreeImpl extends MinimalEObjectImpl.Container implements FamilyTree {
 	/**
-	 * The cached value of the '{@link #getPersons() <em>Persons</em>}' containment reference list.
+	 * The cached value of the '{@link #getMembers() <em>Members</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPersons()
+	 * @see #getMembers()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Person> persons;
+	protected EList<Person> members;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -62,11 +68,11 @@ public class FamilyTreeImpl extends MinimalEObjectImpl.Container implements Fami
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Person> getPersons() {
-		if (persons == null) {
-			persons = new EObjectContainmentEList<Person>(Person.class, this, FamilytreePackage.FAMILY_TREE__PERSONS);
+	public EList<Person> getMembers() {
+		if (members == null) {
+			members = new EObjectContainmentEList<Person>(Person.class, this, FamilytreePackage.FAMILY_TREE__MEMBERS);
 		}
-		return persons;
+		return members;
 	}
 
 	/**
@@ -77,8 +83,8 @@ public class FamilyTreeImpl extends MinimalEObjectImpl.Container implements Fami
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FamilytreePackage.FAMILY_TREE__PERSONS:
-				return ((InternalEList<?>)getPersons()).basicRemove(otherEnd, msgs);
+			case FamilytreePackage.FAMILY_TREE__MEMBERS:
+				return ((InternalEList<?>)getMembers()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -91,8 +97,8 @@ public class FamilyTreeImpl extends MinimalEObjectImpl.Container implements Fami
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FamilytreePackage.FAMILY_TREE__PERSONS:
-				return getPersons();
+			case FamilytreePackage.FAMILY_TREE__MEMBERS:
+				return getMembers();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -106,9 +112,9 @@ public class FamilyTreeImpl extends MinimalEObjectImpl.Container implements Fami
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FamilytreePackage.FAMILY_TREE__PERSONS:
-				getPersons().clear();
-				getPersons().addAll((Collection<? extends Person>)newValue);
+			case FamilytreePackage.FAMILY_TREE__MEMBERS:
+				getMembers().clear();
+				getMembers().addAll((Collection<? extends Person>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -122,8 +128,8 @@ public class FamilyTreeImpl extends MinimalEObjectImpl.Container implements Fami
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FamilytreePackage.FAMILY_TREE__PERSONS:
-				getPersons().clear();
+			case FamilytreePackage.FAMILY_TREE__MEMBERS:
+				getMembers().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -137,8 +143,8 @@ public class FamilyTreeImpl extends MinimalEObjectImpl.Container implements Fami
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FamilytreePackage.FAMILY_TREE__PERSONS:
-				return persons != null && !persons.isEmpty();
+			case FamilytreePackage.FAMILY_TREE__MEMBERS:
+				return members != null && !members.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

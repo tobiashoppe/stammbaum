@@ -7,10 +7,12 @@ import de.familytree.familytree.FamilytreeFactory;
 import de.familytree.familytree.FamilytreePackage;
 import de.familytree.familytree.Man;
 import de.familytree.familytree.Person;
-
+import de.familytree.familytree.RelationshipStatus;
 import de.familytree.familytree.Woman;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -50,6 +52,13 @@ public class FamilytreePackageImpl extends EPackageImpl implements FamilytreePac
 	 * @generated
 	 */
 	private EClass manEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum relationshipStatusEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -153,6 +162,78 @@ public class FamilytreePackageImpl extends EPackageImpl implements FamilytreePac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getPerson_Parents() {
+		return (EReference)personEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPerson_DayOfBirth() {
+		return (EAttribute)personEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPerson_RelationshipStatus() {
+		return (EAttribute)personEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPerson_Died() {
+		return (EAttribute)personEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPerson_NameOfBirth() {
+		return (EAttribute)personEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPerson_LocationOfBirth() {
+		return (EAttribute)personEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPerson_InRelationWith() {
+		return (EReference)personEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPerson_InRelationTo() {
+		return (EReference)personEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getFamilyTree() {
 		return familyTreeEClass;
 	}
@@ -162,7 +243,7 @@ public class FamilytreePackageImpl extends EPackageImpl implements FamilytreePac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFamilyTree_Persons() {
+	public EReference getFamilyTree_Members() {
 		return (EReference)familyTreeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -182,6 +263,15 @@ public class FamilytreePackageImpl extends EPackageImpl implements FamilytreePac
 	 */
 	public EClass getMan() {
 		return manEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getRelationshipStatus() {
+		return relationshipStatusEEnum;
 	}
 
 	/**
@@ -216,13 +306,24 @@ public class FamilytreePackageImpl extends EPackageImpl implements FamilytreePac
 		createEAttribute(personEClass, PERSON__FIRST_NAME);
 		createEAttribute(personEClass, PERSON__SECOND_NAME);
 		createEReference(personEClass, PERSON__CHILDREN);
+		createEReference(personEClass, PERSON__PARENTS);
+		createEAttribute(personEClass, PERSON__DAY_OF_BIRTH);
+		createEAttribute(personEClass, PERSON__RELATIONSHIP_STATUS);
+		createEAttribute(personEClass, PERSON__DIED);
+		createEAttribute(personEClass, PERSON__NAME_OF_BIRTH);
+		createEAttribute(personEClass, PERSON__LOCATION_OF_BIRTH);
+		createEReference(personEClass, PERSON__IN_RELATION_WITH);
+		createEReference(personEClass, PERSON__IN_RELATION_TO);
 
 		familyTreeEClass = createEClass(FAMILY_TREE);
-		createEReference(familyTreeEClass, FAMILY_TREE__PERSONS);
+		createEReference(familyTreeEClass, FAMILY_TREE__MEMBERS);
 
 		womanEClass = createEClass(WOMAN);
 
 		manEClass = createEClass(MAN);
+
+		// Create enums
+		relationshipStatusEEnum = createEEnum(RELATIONSHIP_STATUS);
 	}
 
 	/**
@@ -260,14 +361,30 @@ public class FamilytreePackageImpl extends EPackageImpl implements FamilytreePac
 		initEClass(personEClass, Person.class, "Person", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPerson_FirstName(), ecorePackage.getEString(), "firstName", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerson_SecondName(), ecorePackage.getEString(), "secondName", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPerson_Children(), this.getPerson(), null, "children", null, 0, -1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPerson_Children(), this.getPerson(), this.getPerson_Parents(), "children", null, 0, -1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPerson_Parents(), this.getPerson(), this.getPerson_Children(), "parents", null, 0, 2, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPerson_DayOfBirth(), ecorePackage.getEDate(), "dayOfBirth", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPerson_RelationshipStatus(), this.getRelationshipStatus(), "relationshipStatus", null, 1, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPerson_Died(), ecorePackage.getEBoolean(), "died", "false", 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPerson_NameOfBirth(), ecorePackage.getEString(), "nameOfBirth", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPerson_LocationOfBirth(), ecorePackage.getEString(), "locationOfBirth", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPerson_InRelationWith(), this.getPerson(), this.getPerson_InRelationTo(), "inRelationWith", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPerson_InRelationTo(), this.getPerson(), this.getPerson_InRelationWith(), "inRelationTo", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(familyTreeEClass, FamilyTree.class, "FamilyTree", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getFamilyTree_Persons(), this.getPerson(), null, "persons", null, 0, -1, FamilyTree.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFamilyTree_Members(), this.getPerson(), null, "members", null, 0, -1, FamilyTree.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(womanEClass, Woman.class, "Woman", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(manEClass, Man.class, "Man", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		// Initialize enums and add enum literals
+		initEEnum(relationshipStatusEEnum, RelationshipStatus.class, "RelationshipStatus");
+		addEEnumLiteral(relationshipStatusEEnum, RelationshipStatus.SINGLE);
+		addEEnumLiteral(relationshipStatusEEnum, RelationshipStatus.WIDOWED);
+		addEEnumLiteral(relationshipStatusEEnum, RelationshipStatus.DIVORCED);
+		addEEnumLiteral(relationshipStatusEEnum, RelationshipStatus.LIAISED);
+		addEEnumLiteral(relationshipStatusEEnum, RelationshipStatus.MARRIED);
 
 		// Create resource
 		createResource(eNS_URI);

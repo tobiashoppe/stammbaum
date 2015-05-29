@@ -4,6 +4,7 @@ package de.familytree.familytree;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -94,13 +95,85 @@ public interface FamilytreePackage extends EPackage {
 	int PERSON__CHILDREN = 2;
 
 	/**
+	 * The feature id for the '<em><b>Parents</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__PARENTS = 3;
+
+	/**
+	 * The feature id for the '<em><b>Day Of Birth</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__DAY_OF_BIRTH = 4;
+
+	/**
+	 * The feature id for the '<em><b>Relationship Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__RELATIONSHIP_STATUS = 5;
+
+	/**
+	 * The feature id for the '<em><b>Died</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__DIED = 6;
+
+	/**
+	 * The feature id for the '<em><b>Name Of Birth</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__NAME_OF_BIRTH = 7;
+
+	/**
+	 * The feature id for the '<em><b>Location Of Birth</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__LOCATION_OF_BIRTH = 8;
+
+	/**
+	 * The feature id for the '<em><b>In Relation With</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__IN_RELATION_WITH = 9;
+
+	/**
+	 * The feature id for the '<em><b>In Relation To</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__IN_RELATION_TO = 10;
+
+	/**
 	 * The number of structural features of the '<em>Person</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_FEATURE_COUNT = 3;
+	int PERSON_FEATURE_COUNT = 11;
 
 	/**
 	 * The number of operations of the '<em>Person</em>' class.
@@ -122,13 +195,13 @@ public interface FamilytreePackage extends EPackage {
 	int FAMILY_TREE = 1;
 
 	/**
-	 * The feature id for the '<em><b>Persons</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Members</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FAMILY_TREE__PERSONS = 0;
+	int FAMILY_TREE__MEMBERS = 0;
 
 	/**
 	 * The number of structural features of the '<em>Family Tree</em>' class.
@@ -147,7 +220,6 @@ public interface FamilytreePackage extends EPackage {
 	 * @ordered
 	 */
 	int FAMILY_TREE_OPERATION_COUNT = 0;
-
 
 	/**
 	 * The meta object id for the '{@link de.familytree.familytree.impl.WomanImpl <em>Woman</em>}' class.
@@ -185,6 +257,78 @@ public interface FamilytreePackage extends EPackage {
 	 * @ordered
 	 */
 	int WOMAN__CHILDREN = PERSON__CHILDREN;
+
+	/**
+	 * The feature id for the '<em><b>Parents</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WOMAN__PARENTS = PERSON__PARENTS;
+
+	/**
+	 * The feature id for the '<em><b>Day Of Birth</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WOMAN__DAY_OF_BIRTH = PERSON__DAY_OF_BIRTH;
+
+	/**
+	 * The feature id for the '<em><b>Relationship Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WOMAN__RELATIONSHIP_STATUS = PERSON__RELATIONSHIP_STATUS;
+
+	/**
+	 * The feature id for the '<em><b>Died</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WOMAN__DIED = PERSON__DIED;
+
+	/**
+	 * The feature id for the '<em><b>Name Of Birth</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WOMAN__NAME_OF_BIRTH = PERSON__NAME_OF_BIRTH;
+
+	/**
+	 * The feature id for the '<em><b>Location Of Birth</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WOMAN__LOCATION_OF_BIRTH = PERSON__LOCATION_OF_BIRTH;
+
+	/**
+	 * The feature id for the '<em><b>In Relation With</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WOMAN__IN_RELATION_WITH = PERSON__IN_RELATION_WITH;
+
+	/**
+	 * The feature id for the '<em><b>In Relation To</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WOMAN__IN_RELATION_TO = PERSON__IN_RELATION_TO;
 
 	/**
 	 * The number of structural features of the '<em>Woman</em>' class.
@@ -242,6 +386,78 @@ public interface FamilytreePackage extends EPackage {
 	int MAN__CHILDREN = PERSON__CHILDREN;
 
 	/**
+	 * The feature id for the '<em><b>Parents</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAN__PARENTS = PERSON__PARENTS;
+
+	/**
+	 * The feature id for the '<em><b>Day Of Birth</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAN__DAY_OF_BIRTH = PERSON__DAY_OF_BIRTH;
+
+	/**
+	 * The feature id for the '<em><b>Relationship Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAN__RELATIONSHIP_STATUS = PERSON__RELATIONSHIP_STATUS;
+
+	/**
+	 * The feature id for the '<em><b>Died</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAN__DIED = PERSON__DIED;
+
+	/**
+	 * The feature id for the '<em><b>Name Of Birth</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAN__NAME_OF_BIRTH = PERSON__NAME_OF_BIRTH;
+
+	/**
+	 * The feature id for the '<em><b>Location Of Birth</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAN__LOCATION_OF_BIRTH = PERSON__LOCATION_OF_BIRTH;
+
+	/**
+	 * The feature id for the '<em><b>In Relation With</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAN__IN_RELATION_WITH = PERSON__IN_RELATION_WITH;
+
+	/**
+	 * The feature id for the '<em><b>In Relation To</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAN__IN_RELATION_TO = PERSON__IN_RELATION_TO;
+
+	/**
 	 * The number of structural features of the '<em>Man</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -258,6 +474,16 @@ public interface FamilytreePackage extends EPackage {
 	 * @ordered
 	 */
 	int MAN_OPERATION_COUNT = PERSON_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link de.familytree.familytree.RelationshipStatus <em>Relationship Status</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.familytree.familytree.RelationshipStatus
+	 * @see de.familytree.familytree.impl.FamilytreePackageImpl#getRelationshipStatus()
+	 * @generated
+	 */
+	int RELATIONSHIP_STATUS = 4;
 
 
 	/**
@@ -304,6 +530,94 @@ public interface FamilytreePackage extends EPackage {
 	EReference getPerson_Children();
 
 	/**
+	 * Returns the meta object for the reference list '{@link de.familytree.familytree.Person#getParents <em>Parents</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Parents</em>'.
+	 * @see de.familytree.familytree.Person#getParents()
+	 * @see #getPerson()
+	 * @generated
+	 */
+	EReference getPerson_Parents();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.familytree.familytree.Person#getDayOfBirth <em>Day Of Birth</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Day Of Birth</em>'.
+	 * @see de.familytree.familytree.Person#getDayOfBirth()
+	 * @see #getPerson()
+	 * @generated
+	 */
+	EAttribute getPerson_DayOfBirth();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.familytree.familytree.Person#getRelationshipStatus <em>Relationship Status</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Relationship Status</em>'.
+	 * @see de.familytree.familytree.Person#getRelationshipStatus()
+	 * @see #getPerson()
+	 * @generated
+	 */
+	EAttribute getPerson_RelationshipStatus();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.familytree.familytree.Person#isDied <em>Died</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Died</em>'.
+	 * @see de.familytree.familytree.Person#isDied()
+	 * @see #getPerson()
+	 * @generated
+	 */
+	EAttribute getPerson_Died();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.familytree.familytree.Person#getNameOfBirth <em>Name Of Birth</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name Of Birth</em>'.
+	 * @see de.familytree.familytree.Person#getNameOfBirth()
+	 * @see #getPerson()
+	 * @generated
+	 */
+	EAttribute getPerson_NameOfBirth();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.familytree.familytree.Person#getLocationOfBirth <em>Location Of Birth</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Location Of Birth</em>'.
+	 * @see de.familytree.familytree.Person#getLocationOfBirth()
+	 * @see #getPerson()
+	 * @generated
+	 */
+	EAttribute getPerson_LocationOfBirth();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.familytree.familytree.Person#getInRelationWith <em>In Relation With</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>In Relation With</em>'.
+	 * @see de.familytree.familytree.Person#getInRelationWith()
+	 * @see #getPerson()
+	 * @generated
+	 */
+	EReference getPerson_InRelationWith();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.familytree.familytree.Person#getInRelationTo <em>In Relation To</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>In Relation To</em>'.
+	 * @see de.familytree.familytree.Person#getInRelationTo()
+	 * @see #getPerson()
+	 * @generated
+	 */
+	EReference getPerson_InRelationTo();
+
+	/**
 	 * Returns the meta object for class '{@link de.familytree.familytree.FamilyTree <em>Family Tree</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -314,15 +628,15 @@ public interface FamilytreePackage extends EPackage {
 	EClass getFamilyTree();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link de.familytree.familytree.FamilyTree#getPersons <em>Persons</em>}'.
+	 * Returns the meta object for the containment reference list '{@link de.familytree.familytree.FamilyTree#getMembers <em>Members</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Persons</em>'.
-	 * @see de.familytree.familytree.FamilyTree#getPersons()
+	 * @return the meta object for the containment reference list '<em>Members</em>'.
+	 * @see de.familytree.familytree.FamilyTree#getMembers()
 	 * @see #getFamilyTree()
 	 * @generated
 	 */
-	EReference getFamilyTree_Persons();
+	EReference getFamilyTree_Members();
 
 	/**
 	 * Returns the meta object for class '{@link de.familytree.familytree.Woman <em>Woman</em>}'.
@@ -343,6 +657,16 @@ public interface FamilytreePackage extends EPackage {
 	 * @generated
 	 */
 	EClass getMan();
+
+	/**
+	 * Returns the meta object for enum '{@link de.familytree.familytree.RelationshipStatus <em>Relationship Status</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Relationship Status</em>'.
+	 * @see de.familytree.familytree.RelationshipStatus
+	 * @generated
+	 */
+	EEnum getRelationshipStatus();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -402,6 +726,70 @@ public interface FamilytreePackage extends EPackage {
 		EReference PERSON__CHILDREN = eINSTANCE.getPerson_Children();
 
 		/**
+		 * The meta object literal for the '<em><b>Parents</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PERSON__PARENTS = eINSTANCE.getPerson_Parents();
+
+		/**
+		 * The meta object literal for the '<em><b>Day Of Birth</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PERSON__DAY_OF_BIRTH = eINSTANCE.getPerson_DayOfBirth();
+
+		/**
+		 * The meta object literal for the '<em><b>Relationship Status</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PERSON__RELATIONSHIP_STATUS = eINSTANCE.getPerson_RelationshipStatus();
+
+		/**
+		 * The meta object literal for the '<em><b>Died</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PERSON__DIED = eINSTANCE.getPerson_Died();
+
+		/**
+		 * The meta object literal for the '<em><b>Name Of Birth</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PERSON__NAME_OF_BIRTH = eINSTANCE.getPerson_NameOfBirth();
+
+		/**
+		 * The meta object literal for the '<em><b>Location Of Birth</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PERSON__LOCATION_OF_BIRTH = eINSTANCE.getPerson_LocationOfBirth();
+
+		/**
+		 * The meta object literal for the '<em><b>In Relation With</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PERSON__IN_RELATION_WITH = eINSTANCE.getPerson_InRelationWith();
+
+		/**
+		 * The meta object literal for the '<em><b>In Relation To</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PERSON__IN_RELATION_TO = eINSTANCE.getPerson_InRelationTo();
+
+		/**
 		 * The meta object literal for the '{@link de.familytree.familytree.impl.FamilyTreeImpl <em>Family Tree</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -412,12 +800,12 @@ public interface FamilytreePackage extends EPackage {
 		EClass FAMILY_TREE = eINSTANCE.getFamilyTree();
 
 		/**
-		 * The meta object literal for the '<em><b>Persons</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Members</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FAMILY_TREE__PERSONS = eINSTANCE.getFamilyTree_Persons();
+		EReference FAMILY_TREE__MEMBERS = eINSTANCE.getFamilyTree_Members();
 
 		/**
 		 * The meta object literal for the '{@link de.familytree.familytree.impl.WomanImpl <em>Woman</em>}' class.
@@ -438,6 +826,16 @@ public interface FamilytreePackage extends EPackage {
 		 * @generated
 		 */
 		EClass MAN = eINSTANCE.getMan();
+
+		/**
+		 * The meta object literal for the '{@link de.familytree.familytree.RelationshipStatus <em>Relationship Status</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.familytree.familytree.RelationshipStatus
+		 * @see de.familytree.familytree.impl.FamilytreePackageImpl#getRelationshipStatus()
+		 * @generated
+		 */
+		EEnum RELATIONSHIP_STATUS = eINSTANCE.getRelationshipStatus();
 
 	}
 

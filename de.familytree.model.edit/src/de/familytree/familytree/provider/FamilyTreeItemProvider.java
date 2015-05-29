@@ -6,12 +6,17 @@ package de.familytree.familytree.provider;
 import de.familytree.familytree.FamilyTree;
 import de.familytree.familytree.FamilytreeFactory;
 import de.familytree.familytree.FamilytreePackage;
+
 import java.util.Collection;
 import java.util.List;
+
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.common.util.ResourceLocator;
+
 import org.eclipse.emf.ecore.EStructuralFeature;
+
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
@@ -72,7 +77,7 @@ public class FamilyTreeItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FamilytreePackage.Literals.FAMILY_TREE__PERSONS);
+			childrenFeatures.add(FamilytreePackage.Literals.FAMILY_TREE__MEMBERS);
 		}
 		return childrenFeatures;
 	}
@@ -125,7 +130,7 @@ public class FamilyTreeItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(FamilyTree.class)) {
-			case FamilytreePackage.FAMILY_TREE__PERSONS:
+			case FamilytreePackage.FAMILY_TREE__MEMBERS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -145,12 +150,12 @@ public class FamilyTreeItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FamilytreePackage.Literals.FAMILY_TREE__PERSONS,
+				(FamilytreePackage.Literals.FAMILY_TREE__MEMBERS,
 				 FamilytreeFactory.eINSTANCE.createWoman()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FamilytreePackage.Literals.FAMILY_TREE__PERSONS,
+				(FamilytreePackage.Literals.FAMILY_TREE__MEMBERS,
 				 FamilytreeFactory.eINSTANCE.createMan()));
 	}
 

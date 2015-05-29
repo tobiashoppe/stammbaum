@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated familytree -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="de.familytree.familytree.presentation.FamilytreeModelWizardID"
+            name="%_UI_FamilytreeModelWizard_label"
+            class="de.familytree.familytree.presentation.FamilytreeModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/FamilytreeModelFile.gif">
+         <description>%_UI_FamilytreeModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated familytree -->
+      <editor
+            id="de.familytree.familytree.presentation.FamilytreeEditorID"
+            name="%_UI_FamilytreeEditor_label"
+            icon="icons/full/obj16/FamilytreeModelFile.gif"
+            extensions="familytree"
+            class="de.familytree.familytree.presentation.FamilytreeEditor"
+            contributorClass="de.familytree.familytree.presentation.FamilytreeActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

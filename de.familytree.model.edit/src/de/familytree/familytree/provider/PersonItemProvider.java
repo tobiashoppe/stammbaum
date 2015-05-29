@@ -5,6 +5,7 @@ package de.familytree.familytree.provider;
 
 import de.familytree.familytree.FamilytreePackage;
 import de.familytree.familytree.Person;
+
 import java.util.Collection;
 import java.util.List;
 
@@ -62,6 +63,14 @@ public class PersonItemProvider
 			addFirstNamePropertyDescriptor(object);
 			addSecondNamePropertyDescriptor(object);
 			addChildrenPropertyDescriptor(object);
+			addParentsPropertyDescriptor(object);
+			addDayOfBirthPropertyDescriptor(object);
+			addRelationshipStatusPropertyDescriptor(object);
+			addDiedPropertyDescriptor(object);
+			addNameOfBirthPropertyDescriptor(object);
+			addLocationOfBirthPropertyDescriptor(object);
+			addInRelationWithPropertyDescriptor(object);
+			addInRelationToPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -133,6 +142,182 @@ public class PersonItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Parents feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addParentsPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Person_parents_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Person_parents_feature", "_UI_Person_type"),
+				 FamilytreePackage.Literals.PERSON__PARENTS,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Day Of Birth feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addDayOfBirthPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Person_dayOfBirth_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Person_dayOfBirth_feature", "_UI_Person_type"),
+				 FamilytreePackage.Literals.PERSON__DAY_OF_BIRTH,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Relationship Status feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addRelationshipStatusPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Person_relationshipStatus_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Person_relationshipStatus_feature", "_UI_Person_type"),
+				 FamilytreePackage.Literals.PERSON__RELATIONSHIP_STATUS,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Died feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addDiedPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Person_died_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Person_died_feature", "_UI_Person_type"),
+				 FamilytreePackage.Literals.PERSON__DIED,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Name Of Birth feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addNameOfBirthPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Person_nameOfBirth_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Person_nameOfBirth_feature", "_UI_Person_type"),
+				 FamilytreePackage.Literals.PERSON__NAME_OF_BIRTH,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Location Of Birth feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addLocationOfBirthPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Person_locationOfBirth_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Person_locationOfBirth_feature", "_UI_Person_type"),
+				 FamilytreePackage.Literals.PERSON__LOCATION_OF_BIRTH,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the In Relation With feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addInRelationWithPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Person_inRelationWith_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Person_inRelationWith_feature", "_UI_Person_type"),
+				 FamilytreePackage.Literals.PERSON__IN_RELATION_WITH,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the In Relation To feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addInRelationToPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Person_inRelationTo_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Person_inRelationTo_feature", "_UI_Person_type"),
+				 FamilytreePackage.Literals.PERSON__IN_RELATION_TO,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns Person.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -172,6 +357,11 @@ public class PersonItemProvider
 		switch (notification.getFeatureID(Person.class)) {
 			case FamilytreePackage.PERSON__FIRST_NAME:
 			case FamilytreePackage.PERSON__SECOND_NAME:
+			case FamilytreePackage.PERSON__DAY_OF_BIRTH:
+			case FamilytreePackage.PERSON__RELATIONSHIP_STATUS:
+			case FamilytreePackage.PERSON__DIED:
+			case FamilytreePackage.PERSON__NAME_OF_BIRTH:
+			case FamilytreePackage.PERSON__LOCATION_OF_BIRTH:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}
