@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Family Tree" uid="familytree_product" id="de.familytree.rcp.familytree_product" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="0.0.1" useFeatures="true" includeLaunchers="true">
+<product name="Family Tree" uid="familytree_product" id="de.familytree.rcp.familytree_product" application="de.familytree.rcp.application" version="0.0.1" useFeatures="true" includeLaunchers="true">
+
 
    <configIni use="default">
    </configIni>
@@ -13,6 +14,9 @@
       </vmArgsMac>
    </launcherArgs>
 
+   <windowImages/>
+
+
    <launcher>
       <solaris/>
       <win useIco="false">
@@ -20,68 +24,39 @@
       </win>
    </launcher>
 
+
    <vm>
+      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</windows>
    </vm>
+
 
    <plugins>
    </plugins>
 
    <features>
-      <feature id="de.familytree.feature"/>
       <feature id="org.eclipse.e4.rcp"/>
       <feature id="org.eclipse.emf.ecore"/>
       <feature id="org.eclipse.emf.common"/>
-      <feature id="org.eclipse.emf.edit"/>
-      <feature id="org.eclipse.emf.ecp.feature"/>
-      <feature id="org.eclipse.emf.ecp.emfstore.feature"/>
-      <feature id="org.eclipse.emf.ecp.e3.feature"/>
-      <feature id="org.eclipse.emf.emfstore.client.ui.feature"/>
-      <feature id="org.eclipse.emf.emfstore.client.feature"/>
-      <feature id="org.eclipse.emf.emfstore.license.feature"/>
-      <feature id="org.eclipse.emf.emfstore.server.feature"/>
-      <feature id="org.eclipse.emf.emfstore.common.feature"/>
-      <feature id="org.eclipse.net4j.util"/>
-      <feature id="org.eclipse.emf.edit.ui"/>
+      <feature id="de.familytree.feature"/>
+      <feature id="org.eclipse.platform" version="4.4.0.v20140606-1558"/>
+      <feature id="org.eclipse.emf.edit.ui" version="2.10.0.v20140519-0339"/>
+      <feature id="org.eclipse.emf.edit" version="2.10.0.v20140519-0339"/>
+      <feature id="org.eclipse.emf.common.ui" version="2.9.0.v20140519-0339"/>
+      <feature id="org.eclipse.emf.transaction" version="1.8.0.201405281451"/>
+      <feature id="org.eclipse.emf.validation" version="1.8.0.201405281429"/>
+      <feature id="org.eclipse.jdt" version="3.10.0.v20140606-1536"/>
       <feature id="org.eclipse.ecf.filetransfer.httpclient4.feature"/>
-      <feature id="org.eclipse.equinox.p2.core.feature"/>
-      <feature id="org.eclipse.ecf.core.ssl.feature"/>
-      <feature id="org.eclipse.help"/>
-      <feature id="org.eclipse.equinox.p2.rcp.feature"/>
       <feature id="org.eclipse.equinox.p2.user.ui"/>
-      <feature id="org.eclipse.ecf.filetransfer.ssl.feature"/>
-      <feature id="org.eclipse.ecf.filetransfer.feature"/>
-      <feature id="org.eclipse.ecf.core.feature"/>
+      <feature id="org.eclipse.help"/>
       <feature id="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature"/>
       <feature id="org.eclipse.equinox.p2.extras.feature"/>
-      <feature id="org.eclipse.emf.common.ui"/>
-      <feature id="org.eclipse.emf.ecore.edit"/>
-      <feature id="org.eclipse.emf.databinding"/>
-      <feature id="org.eclipse.emf.ecp.viewmodel.feature"/>
-      <feature id="org.eclipse.emf.ecp.view.template.feature"/>
-      <feature id="org.eclipse.emf.databinding.edit"/>
       <feature id="org.eclipse.rcp"/>
-      <feature id="org.eclipse.platform"/>
-      <feature id="org.eclipse.emf.ecp.e4.feature"/>
-      <feature id="org.eclipse.emf.ecp.view.stack.feature"/>
-      <feature id="org.eclipse.emf.ecp.view.validation.feature"/>
-      <feature id="org.eclipse.emf.ecp.view.compoundcontrol.feature"/>
-      <feature id="org.eclipse.emf.ecp.emfforms.idetooling.feature"/>
-      <feature id="org.eclipse.emf.ecp.view.vertical.feature"/>
-      <feature id="org.eclipse.emf.ecp.view.table.feature"/>
-      <feature id="org.eclipse.emf.ecp.view.model.editor.feature"/>
-      <feature id="org.eclipse.emf.ecp.emfforms.runtime.feature"/>
-      <feature id="org.eclipse.emf.ecp.view.horizontal.feature"/>
-      <feature id="org.eclipse.emf.ecp.view.unset.feature"/>
-      <feature id="org.eclipse.emf.ecp.view.model.controls.feature"/>
-      <feature id="org.eclipse.emf.ecp.view.rule.feature"/>
-      <feature id="org.eclipse.emf.ecp.view.group.feature"/>
-      <feature id="org.eclipse.emf.ecp.view.custom.feature"/>
-      <feature id="org.eclipse.emf.ecp.view.label.feature"/>
-      <feature id="org.eclipse.emf.ecp.workspace.feature"/>
-      <feature id="org.eclipse.emf.ecp.view.template.helper.feature"/>
-      <feature id="org.eclipse.emf.ecp.view.categorization.feature"/>
-      <feature id="org.eclipse.emf.ecp.view.treemasterdetail.feature"/>
-      <feature id="org.eclipse.emf.ecp.demo.e4.feature" version="1.4.0.20140819-1650"/>
+      <feature id="org.eclipse.equinox.p2.core.feature"/>
+      <feature id="org.eclipse.ecf.core.feature"/>
+      <feature id="org.eclipse.equinox.p2.rcp.feature"/>
+      <feature id="org.eclipse.ecf.filetransfer.feature"/>
+      <feature id="org.eclipse.ecf.core.ssl.feature"/>
+      <feature id="org.eclipse.ecf.filetransfer.ssl.feature"/>
    </features>
 
 

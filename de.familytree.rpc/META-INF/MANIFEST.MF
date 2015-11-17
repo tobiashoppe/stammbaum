@@ -1,14 +1,12 @@
 Manifest-Version: 1.0
-Require-Bundle: org.eclipse.core.runtime,
- org.eclipse.swt,
- org.eclipse.e4.core.di,
- org.eclipse.e4.ui.workbench,
- org.eclipse.e4.ui.di,
- org.eclipse.e4.core.di.extensions,
- de.familytree.handlers;bundle-version="0.0.0",
- org.eclipse.emf.ecp.application.e4;bundle-version="1.4.0"
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.ide,
+ org.eclipse.core.resources
 Bundle-Version: 0.0.0
 Bundle-Name: de.familytree.rpc
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: de.familytree.rcp;singleton:=true
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 

@@ -2,10 +2,27 @@
 <?eclipse version="3.4"?>
 <plugin>
    <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="de.familytree.rcp.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="de.familytree.rcp.Perspective"
+            id="de.familytree.rcp.perspective">
+      </perspective>
+   </extension>
+   <extension
          id="familytree_product"
          point="org.eclipse.core.runtime.products">
       <product
-            application="org.eclipse.e4.ui.workbench.swt.E4Application"
+            application="de.familytree.rcp.application"
             name="Family Tree">
          <property
                name="appName"
@@ -15,20 +32,11 @@
                name="applicationCSS"
                value="platform:/plugin/de.familytree.rcp/css/default.css">
          </property>
-      </product>
-   </extension>
-   <extension
-         id="familytree_ecp_product"
-         point="org.eclipse.core.runtime.products">
-      <product
-            application="org.eclipse.e4.ui.workbench.swt.E4Application"
-            name="Family Tree">
          <property
-               name="appName"
-               value="Family Tree">
+               name="applicationXMI"
+               value="platform:/plugin/de.familytree.rcp/Application.e4xmi">
          </property>
       </product>
    </extension>
-
 
 </plugin>

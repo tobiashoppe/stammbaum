@@ -1,37 +1,50 @@
 <?xml version="1.0" encoding="ASCII"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_ZMiHMCnPEeSBD8F_g1jsPA" elementId="de.familytree.rpc.application">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_acfTMCnPEeSBD8F_g1jsPA" elementId="de.familytree.rpc.trimmedwindow.familyTree" selectedElement="_0U1X8CnUEeSBD8F_g1jsPA" label="Family Tree" x="100" y="100" width="800" height="600">
-    <children xsi:type="advanced:PerspectiveStack" xmi:id="_0U1X8CnUEeSBD8F_g1jsPA" elementId="de.familytree.rpc.perspectivestack.0" selectedElement="_9qCMwCnUEeSBD8F_g1jsPA">
-      <children xsi:type="advanced:Perspective" xmi:id="_9qCMwCnUEeSBD8F_g1jsPA" elementId="de.familytree.rpc.perspective.familyTree" selectedElement="_I4mW8CnVEeSBD8F_g1jsPA" label="Family Tree">
-        <children xsi:type="basic:PartSashContainer" xmi:id="_I4mW8CnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.overview" selectedElement="_RcPL8CnVEeSBD8F_g1jsPA" horizontal="true">
-          <children xsi:type="basic:PartStack" xmi:id="_RcPL8CnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.overview" selectedElement="_3SGk4CnVEeSBD8F_g1jsPA">
-            <children xsi:type="basic:Part" xmi:id="_3SGk4CnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.part.overview" contributionURI="bundleclass://org.eclipse.emf.ecp.ui.e4/org.eclipse.emf.ecp.ui.e4.view.ECPModelView" label="Overview" iconURI="platform:/plugin/org.eclipse.emf.ecp.application.e4/icons/folder_brick.png"/>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_ceFqMIxiEeWxbbpOwizxqQ" elementId="de.familytree.rcp.Application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_mcsoYIxiEeWxbbpOwizxqQ" elementId="de.familytree.rcp.trimmedwindow.familyTreeWindow" label="Family Tree Window" x="100" y="100" width="800" height="600">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_JKbywIxjEeWxbbpOwizxqQ" elementId="de.familytree.rcp.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_KqhFcIxjEeWxbbpOwizxqQ" elementId="de.familytree.rcp.perspective" label="Family Tree">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_YvgqMIxjEeWxbbpOwizxqQ" elementId="de.familytree.rcp.partsashcontainer.main" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_gxZdAIxjEeWxbbpOwizxqQ" elementId="de.familytree.rcp.partstack.explorer" containerData="2500">
+            <children xsi:type="advanced:Placeholder" xmi:id="_84n4EI0AEeWxbbpOwizxqQ" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_-MtjIIxxEeWxbbpOwizxqQ"/>
           </children>
-        </children>
-        <children xsi:type="basic:PartSashContainer" xmi:id="_aVdPYCnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.content">
-          <children xsi:type="basic:PartStack" xmi:id="_gJPy8CnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.content.view">
-            <children xsi:type="basic:Part" xmi:id="_7vpHMCnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.part.content.view" contributionURI="bundleclass://de.familytree.wizards/de.familytree.wizards.ViewWizard" label="View"/>
-          </children>
-          <children xsi:type="basic:PartStack" xmi:id="_V32mQC30EeSbXaBE1ie_FA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.content.details">
-            <children xsi:type="basic:Part" xmi:id="_7WK3QCnVEeSBD8F_g1jsPA" elementId="de.familytree.rpc.familytree.partsashcontainer.partstack.part.content.details" contributionURI="bundleclass://org.eclipse.emf.ecp.ui.e4/org.eclipse.emf.ecp.ui.e4.view.ECPRepositoryView" label="Details" iconURI="platform:/plugin/org.eclipse.emf.ecp.application.e4/icons/repositories.gif"/>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_lDWaYIxjEeWxbbpOwizxqQ" elementId="de.familytree.rcp.partsashcontainer.view" containerData="7500">
+            <children xsi:type="advanced:Placeholder" xmi:id="_ASbFcI0BEeWxbbpOwizxqQ" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_etyGkIz_EeWxbbpOwizxqQ"/>
+            <children xsi:type="basic:PartStack" xmi:id="_sUH5UIxjEeWxbbpOwizxqQ" elementId="de.familytree.rcp.partstack.details" containerData="2500">
+              <children xsi:type="advanced:Placeholder" xmi:id="_Bvp4cI0BEeWxbbpOwizxqQ" elementId="org.eclipse.ui.views.PropertySheet" ref="_NSLOwIxkEeWxbbpOwizxqQ"/>
+            </children>
           </children>
         </children>
       </children>
     </children>
-    <mainMenu xmi:id="_18NSgCnhEeSBD8F_g1jsPA" elementId="org.eclipse.ui.main.menu">
-      <children xsi:type="menu:Menu" xmi:id="_78_wQCnhEeSBD8F_g1jsPA" elementId="org.eclipse.ui.file.menu" label="File">
-        <children xsi:type="menu:MenuSeparator" xmi:id="_5vX6wCnkEeSBD8F_g1jsPA" elementId="de.familytree.rcp.menuseparator.0"/>
-        <children xsi:type="menu:HandledMenuItem" xmi:id="_Og-BwCniEeSBD8F_g1jsPA" elementId="de.familytree.rcp.handledmenuitem.file.exit" label="Exit" command="_XbHSQCniEeSBD8F_g1jsPA"/>
+    <sharedElements xsi:type="basic:Part" xmi:id="_-MtjIIxxEeWxbbpOwizxqQ" elementId="org.eclipse.ui.navigator.ProjectExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Project Explorer" iconURI="platform:/plugin/org.eclipse.ui.navigator.resources//icons/full/eview16/resource_persp.gif">
+      <tags>View</tags>
+      <tags>categoryTag:General</tags>
+      <menus xmi:id="_-MtjIYxxEeWxbbpOwizxqQ" elementId="org.eclipse.ui.navigator.ProjectExplorer">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_-MtjIoxxEeWxbbpOwizxqQ" elementId="org.eclipse.ui.navigator.ProjectExplorer#PopupMenu">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:org.eclipse.ui.navigator.ProjectExplorer#PopupMenu</tags>
+      </menus>
+      <toolbar xmi:id="_-MtjI4xxEeWxbbpOwizxqQ" elementId="org.eclipse.ui.navigator.ProjectExplorer"/>
+    </sharedElements>
+    <sharedElements xsi:type="advanced:Area" xmi:id="_etyGkIz_EeWxbbpOwizxqQ" elementId="org.eclipse.ui.editorss" containerData="" label="Editors">
+      <children xsi:type="basic:PartStack" xmi:id="_etyGkYz_EeWxbbpOwizxqQ" elementId="org.eclipse.e4.primaryDataStack">
+        <tags>newtablook</tags>
+        <tags>org.eclipse.e4.primaryDataStack</tags>
+        <tags>EditorStack</tags>
       </children>
-    </mainMenu>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_NSLOwIxkEeWxbbpOwizxqQ" elementId="org.eclipse.ui.views.PropertySheet" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Properties" iconURI="platform:/plugin/org.eclipse.ui.views//icons/full/eview16/prop_ps.gif">
+      <toolbar xmi:id="_SThowIxkEeWxbbpOwizxqQ" elementId="de.familytree.rcp.toolbar.1"/>
+    </sharedElements>
   </children>
-  <handlers xmi:id="_l-pFwCnlEeSBD8F_g1jsPA" elementId="de.familytree.rcp.handlers.file.exit" contributionURI="bundleclass://de.familytree.handlers/de.familytree.handlers.ExitHandler" command="_XbHSQCniEeSBD8F_g1jsPA"/>
-  <commands xmi:id="_XbHSQCniEeSBD8F_g1jsPA" elementId="org.eclipse.ui.file.exit" commandName="Exit"/>
-  <addons xmi:id="_ZMiHMSnPEeSBD8F_g1jsPA" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
-  <addons xmi:id="_ZMiHMinPEeSBD8F_g1jsPA" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
-  <addons xmi:id="_ZMiHMynPEeSBD8F_g1jsPA" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
-  <addons xmi:id="_ZMiHNCnPEeSBD8F_g1jsPA" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
-  <addons xmi:id="_ZMiHNSnPEeSBD8F_g1jsPA" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
-  <addons xmi:id="_ZMiHNinPEeSBD8F_g1jsPA" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
-  <addons xmi:id="_ZMiHNynPEeSBD8F_g1jsPA" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_ceFqMYxiEeWxbbpOwizxqQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_ceFqMoxiEeWxbbpOwizxqQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_ceFqM4xiEeWxbbpOwizxqQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_ceFqNIxiEeWxbbpOwizxqQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_ceFqNYxiEeWxbbpOwizxqQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_ceFqNoxiEeWxbbpOwizxqQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_ceFqN4xiEeWxbbpOwizxqQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
 </application:Application>
